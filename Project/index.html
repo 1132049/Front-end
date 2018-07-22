@@ -4,14 +4,45 @@
 		<title> Homework </title>	
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<link rel="stylesheet" type="text/css" href="normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	
 	<body>
-
 	<header>
 		<img class="logo" src="Images/logo.png" alt="logo" >
+	        <div class="topnav" id="myTopnav">
+  			<a href="#home" class="active">About</a>
+  			<a href="#agenda">Agenda</a>
+  			<a href="#speakers">Speakers</a>
+ 			<a href="#FAQ">FAQ</a>
+			<a href="#tickets">Tickets</a>
+ 			<a href="#blog">Blog</a>
+ 	        <div class="dropdown">
+  			<button class="dropbtn">Dropdown 
+                            <i class="fa fa-caret-down"></i>
+                    	</button>
+   		<div class="dropdown-content">
+      			<a href="#">About</a>
+      			<a href="#">Agenda</a>
+    			<a href="#">Speakers</a>
+     		        <a href="#">FAQ</a>
+    	                <a href="#">Tickets</a>
+     		        <a href="#">Blog</a>
+   		</div>
+<!-- --------Javascript -->   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 	</header>
 
 <!-- --------Front Page -->
@@ -20,7 +51,16 @@
 
  <!-- --------About -->
 		<section id="section-2">
-		</section>
+			<div class="container">
+  			    <article>
+                               <h1>About us
+       			       </h1>
+          			    <p>
+               			      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in lorem justo. Etiam rhoncus nisi enim, id elementum mi dapibus convallis. Sed bibendum justo nibh, et faucibus nulla aliquam ac. Sed id eleifend orci. Nulla sed nulla accumsan, sagittis arcu feugiat, gravida ex. Pellentesque nec turpis vel magna dapibus condimentum a in lorem. Morbi ullamcorper enim nec facilisis interdum. Aliquam gravida felis quis quam faucibus, pulvinar semper dolor pulvinar.
+                                   </p>
+  			    </article>
+			</div>
+	         </section>
 
 <!-- --------Speakers -->
 		<section id="section-3">
