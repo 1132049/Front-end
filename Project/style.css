@@ -1,0 +1,122 @@
+body {
+  background-color: #141415;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  width: 80%;
+  z-index: -1;
+}
+
+.logo {
+  height: 25%;
+  width: 25%;
+  padding: 6%;
+  z-index: 1;
+}
+
+/*---Front page*/
+#section-1 {
+  background-image: url("Images/img-1.gif");
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/*---About us*/
+#section-2 {
+  background-image: url("Images/img-2.png");
+  opacity: 0.2;
+  background-position: bottom;  
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -2;  
+}
+
+/*---Speakers*/
+#section-3 {
+  background-image: url(Images/img-3.png);
+  opacity: 0.08;
+  position: absolute;
+  vertical-align: middle;
+  top: 200%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+/*---Agenda*/
+#section-4 {
+  background-image: url();
+  opacity: 0.5;
+  position: absolute;
+  margin: 0;
+  top: 300%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  z-index: -1;
+}
+
+/*---Gallery*/
+#section-5 {
+  background-image: url(Images/img-5.png);
+  opacity: 0.08;
+  position: absolute;
+  margin: 0;
+  vertical-align: middle;
+  top: 400%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right ;
+  background-size: cover;
+  z-index: -1;
+}
+
+/*---Sponsors*/
+#section-6 {
+  background-image: url(Images/img-6.png);
+  opacity: 0.5;
+  position: absolute;
+  margin: 0;
+  top: 500%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  z-index: -1;
+}
+/*---Contact us*/
+#section-7 {
+  background-image: url(Images/img-7.png);
+  opacity: 0.07;
+  position: absolute;
+  margin: 0;
+  top: 600%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 80%;
+  z-index: -1;
+}
