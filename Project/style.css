@@ -115,6 +115,483 @@ header {
     text-align: left;
   }
   
+  #speakers-section { 
+	padding-bottom: 20px;
+}
+
+#speakers-title { 
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	margin: 40px 0;
+	padding: 0 0;
+}
+
+.speakers-heading { 
+	text-align: center;
+	font-size: 60px;
+	color:white;
+	padding: 0 0;
+}
+
+.panels-container { 
+	opacity: 0;
+	margin: 0 auto;
+}
+
+
+.panels-container.show { 
+	opacity: 1;
+	transition: 0.7s;
+}
+
+* {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+.panel { 
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.panel , .panels-container { 
+	text-align: center;
+}
+
+.name , .profession { 
+	margin-top: 18px;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.panels-container, #tag, .modal-body , .modal-text { 
+	margin: 0 auto;
+}
+
+/* image grayscale */
+.speaker-image {
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(100%); /* FF 35+ */
+}
+
+.speaker-image:hover {
+	-webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(0%); /* FF 35+ */	
+}
+
+
+/* shake */
+.speaker-image:hover + h3{
+	animation: shake 0.62s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+
+.speaker-image { 
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.speaker-image:hover  {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.04);
+}
+
+
+@keyframes shake {
+	80%, 100% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	80%, 30% {
+		transform: translate3d(1px, 0, 0);
+	}
+
+	70%, 80%, 70% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	80%, 60% {
+		transform: translate3d(1px, 0, 0);
+	}
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ /* Black w/ opacity */
+}
+
+.modal-content {
+	background-color: white;
+	margin: 50px auto;
+	border: solid 2px white;
+	border-radius: 7px;
+	box-shadow: 23px 18px #e1e1ea;
+	height: auto;
+}
+
+.modal-header { 
+	background-color: beige;
+	padding: 7px 5px;
+}
+
+#tag {
+	font-size: 35px;
+	color: black;
+	margin: 0 auto;
+	font-family: arial;
+	font-weight: 1000;
+	text-align: center;
+}
+
+/* The Close Button */
+.fa-close { 
+	color: black;
+	float: right;
+
+}
+
+.modal-header .fa-close { 
+	font-size: 50px; 
+	color: black;
+}
+
+.modal-text { 
+	color: black;
+	font-size: 20px;
+	float: left;
+}
+
+.modal-image { 
+	width: 30%;
+	border: solid 1px #CCC;
+	-moz-box-shadow: 5px 5px 0px #e1e1ea;
+	-webkit-box-shadow: 5px 5px 0px #e1e1ea;
+	box-shadow: 5px 5px 0px #e1e1ea;
+}
+
+.modal-body { 
+	height: auto;
+	padding: 20px 8px;
+}
+
+.modal-body p {
+	font-size: 18px;
+	font-size-adjust: auto;
+}
+
+.head h2 , .links h4 {
+	padding: 0 0;
+	margin: 0 0;
+}
+
+.modal-body { 
+	padding: 20px 20px;
+	width: auto;
+}
+
+.links i { 
+	display: block;
+	margin-top: 15px;
+}
+
+.links h4 {
+	display: inline;
+	margin-left: 8px;
+	font-size: 17px;
+}
+
+a .social-icon { 
+	font-size: 20px;
+}
+
+.speaker {
+	font-size: 23px;
+}
+
+.modal-name { 
+	font-size: 30px;
+}
+
+.links a { 
+	color: black;
+	text-decoration: none;
+}
+
+.modal-image { 
+	border-radius: 8px;
+}
+
+@media only screen and (min-width: 1201px) { 
+
+	.panels-container {
+		display: flex;
+		width: 75%;
+		flex-wrap: wrap;
+	}
+
+	.panel { 
+		max-width: 33%;	
+	}
+
+	.name { 
+		font-size: 18px;
+	}
+
+	.profession { 
+		font-size: 16px;
+	}
+
+	.speaker-image { 
+		width: 63%;
+	}
+
+	.modal-content {
+		max-width: 60%;
+	}
+
+	.modal-header { 
+		padding: 7px 5px;
+		background-color: beige;
+	}
+
+	.modal-image {
+		width: 80%;
+	}
+
+	.modal-body { 
+		display: flex;
+	}
+
+	.modal-body p { 
+		font-size: 18px;
+	}
+
+	.modal-right {
+		flex: 2;
+	}
+
+	.modal-left { 
+		flex: 1;
+	}
+
+	.links { 
+		padding: 5px 0;
+	}
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+
+	.panels-container {
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+	}
+
+	.panel { 
+		max-width: 49%;
+	}
+
+	.speaker-image { 
+		width: 63%;
+	}
+
+	.name { 
+		font-size: 25px;
+	}
+
+	.profession { 
+		font-size: 23px;
+	}
+
+	.panel-last { 
+		float: left;
+	}
+
+	.modal-content { 
+		max-width: 70%;
+	}
+
+	.modal-body { 
+		display: flex;
+	}
+
+	.modal-right {
+		flex: 1;
+	}
+
+	.modal-left { 
+		flex: 0.8;
+	}
+
+	.modal-image {
+		width: 80%;
+	}
+
+	.links { 
+		padding-top: 18px;
+	}
+	
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) { 
+
+	.panels-container {
+		display: flex;
+		flex-wrap: wrap;
+		width: 70%;
+		justify-content: space-between;
+	}
+
+	.panel { 
+		max-width: 49%;
+	}
+
+	.speaker-image { 
+		width: 72%;
+	}
+
+	.panel-last { 
+		float: left;
+	}
+
+	.name { 
+		font-size: 21px;
+	}
+
+	.profession { 
+		font-size: 18px;
+	}
+
+	.modal-content { 
+		max-width: 10%;
+	}
+
+	.modal-content { 
+		max-width: 85%;
+		box-shadow: none;
+	}
+
+	.modal-name { 
+		font-size: 25px;
+	}
+
+	.speaker { 
+		font-size: 20px;
+	}
+
+	.modal-right { 
+		padding-top: 18px;
+	}
+
+	.modal-left{ 
+		height: 240px;
+	}
+
+	.modal-image {
+		width: 220px;
+	}
+
+	.links , .modal-image { 
+		float: left;
+	}
+
+	.links i:first-child { 
+		margin-top: 0px;
+	}
+
+	.links { 
+		padding-left: 40px;
+	}
+
+	.links a i{ 
+		margin-bottom: 15px;
+	}
+
+}
+
+
+@media only screen and (max-width: 600px) { 
+
+	.panels-container {
+		width: 90%;
+	}
+
+	.panel { 
+		max-width: 100%;	   
+	}
+
+	.name , .manager { 
+		font-size: 20px;
+	}
+
+	#tag { 
+		font-size: 27px;
+	}
+
+	.modal-header .fa-close { 
+		font-size: 35px; 
+		color: black;
+	}
+
+	.modal-content {
+		max-width: 90%;
+		box-shadow: none;
+	}
+	
+	.speaker { 
+	margin: 15px 0;
+	}
+
+	.modal-body p, .speaker { 
+		font-size: 17px;
+	}
+
+	.modal-right { 
+		padding-top: 10px;
+	}
+
+	.modal-image {
+		width: 60%;
+	}
+
+	.modal-name { 
+		font-size: 25px;
+	}
+
+	.speaker-image { 
+		width: 60%;
+	}
+
+	.links i { 
+		margin-top: 15px;
+	}
+
+	.links { 
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	a .social-icon , a .icon-text  { 
+		font-size: 15px;
+	}
+
+}
+  
 
 section {
   min-height: 700px;
