@@ -766,7 +766,7 @@ a .social-icon , .links h4 {
 
 @media only screen and (max-width: 600px) { 
 	.carousel-text { 
-		font-size: 10px;
+		font-size: 15px;
 	}
 
 	.carousel-caption { 
