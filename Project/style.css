@@ -815,6 +815,26 @@ section {
 }
 
 /*---Agenda*/
+
+                                  #section-4 {
+                                   width: 90%;
+                                   margin: 0 auto;
+                                   font-family: 'Montserrat', sans-serif;
+                                   }
+                                   h1{
+                                   text-align: center;
+                                   }
+                                   .time {
+                                   padding: 10px;
+                                  }
+                                  .agendatable2{
+                                   text-align: right;
+                                   }
+                                   @media screen and (max-width: 600px) {
+                                   img{
+                                    height: 600px;
+                                     }
+	
 #section-4 {
   background-image: url();
   opacity: 0.5;
