@@ -875,3 +875,455 @@ section {
   background-position: left;
   background-size: auto 80%;
 }
+
+					   
+	    /*  Main Rez  */
+@media only screen and (min-width: 1201px){
+    footer{
+        width: 100%;
+        background-color: #141415;
+        color: white;
+    }
+    /* SPONSORS */
+    .sponsors{
+        width: 60%;
+        margin: 0 auto;
+        height: 600px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .sponsors div{
+        height: 100px;
+    }
+    .sponsors .sponsh{
+        font-size: 2em;
+    }
+    .sponsors div:first-child{
+        grid-column: span 3;
+    }
+    .sponsors img{
+        height: 60px;
+        padding: 15px 0;
+    }
+
+/* CONTACT */
+    .contact{
+        width: 60%;
+        margin: 0 auto;
+        height: 600px;
+    }
+    .footform{
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact>div>h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 2em;
+    }
+    input[type=text]{
+        width: 30%;
+        border: none;
+        border-bottom: 1px solid #9999ff;
+        color: white;
+        background-color: #141415;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    form > input:nth-child(1){
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    form > input:nth-child(3){
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+
+    textarea:focus, input:focus{
+        outline: none;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #9999ff;
+    }
+
+    #message {
+    height: 200px;
+    width: 80%;
+    background-color: #141415;
+    border: 1px solid #9999ff;
+    border-radius: 8px;
+    padding: 10px 10px;
+    resize: none;
+    color: white;
+    }
+    #sendbtn {
+    margin-top: 8%;
+    border: 1px solid #9999ff;
+    background-color: #141415;
+    color: #9999ff;
+    border-radius: 8px;
+    padding-bottom: 5px;
+    width: 50%;
+    }
+
+    #sendbtn:hover{
+    background-color: #9999ff;
+    color: #141415;
+    }
+
+/*        FOOOT           */
+    .foot{
+    font-size: 15px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-rows:1fr 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .foot>div:first-child{
+        border-right: 1px solid white;
+        border-radius: 8px;
+    }
+    .foot>div:last-child{
+        grid-column:span 3;
+        width: 100%;
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
+    .foot img {
+        height: 40px;
+    }
+    .foot>div:nth-child(3){
+        border-left: 1px solid white;
+        border-radius: 8px;
+    }
+
+    #suscribe{
+        width: 45%
+    }
+
+    #suscribebtn{
+        border: 1px solid #9999ff;
+        background-color: #141415;
+        color: #9999ff;
+        border-radius: 6px;
+    }
+    #suscribebtn:hover{
+        background-color: #9999ff;
+        color: #141415;
+    }
+    .foot h5 {
+        font-size: 1.3em;
+    }
+    .foot  span{
+        display: block;
+        padding: 5px 0;
+    }
+    .foot div .fab {
+        padding: 10px;
+        font-size: 1.3em;
+        color: white;
+    }
+}
+
+
+
+    /*  MID REZ  */
+@media only screen and (min-width: 601px) and (max-width: 1200px){
+
+    footer{
+        width: 100%;
+        background-color: #141415;
+        color: white;
+    }
+    /* SPONSORS */
+    .sponsors{
+        width: 70%;
+        margin: 0 auto;
+        max-height: 600px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+    .sponsors div{
+        height: 80px;
+    }
+    .sponsors div h2{
+        font-size: 2em;
+    }
+    .sponsors div:first-child{
+        grid-column: span 3;
+    }
+    .sponsors img{
+        height: 40px;
+        padding: 15px 0;
+    }
+
+/* CONTACT */
+    .contact{
+        width: 70%;
+        margin: 0 auto;
+        height: 600px;
+    }
+    .footform{
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 2em;
+    }
+     input[type=text]{
+        width: 30%;
+        border: none;
+        border-bottom: 1px solid #9999ff;
+        color: white;
+        background-color: #141415;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    form > input:nth-child(1){
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    form > input:nth-child(3){
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+
+    textarea:focus, input:focus{
+        outline: none;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #9999ff;
+    }
+
+    #message {
+    height: 200px;
+    width: 80%;
+    background-color: #141415;
+    border: 1px solid #9999ff;
+    border-radius: 8px;
+    padding: 10px 10px;
+    resize: none;
+    color: white;
+    }
+    #sendbtn {
+    margin-top: 8%;
+    border: 1px solid #9999ff;
+    background-color: #141415;
+    color: #9999ff;
+    border-radius: 8px;
+    padding-bottom: 5px;
+    width: 50%;
+    }
+
+     #suscribebtn, #sendbtn:hover{
+    background-color: #9999ff;
+    color: #141415;
+    }
+
+/*        FOOOT           */
+    .foot{
+    font-size: 15px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-rows:1fr 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .foot>div:first-child{
+        border-right: 1px solid white;
+        border-radius: 8px;
+    }
+    .foot>div:last-child{
+        grid-column:span 3;
+        width: 100%;
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
+    .foot img {
+        height: 40px;
+    }
+    .foot>div:nth-child(3){
+        border-left: 1px solid white;
+        border-radius: 8px;
+    }
+
+    #suscribe{
+        width: 60%
+    }
+
+    #suscribebtn{
+        border: 1px solid #9999ff;
+        background-color: #141415;
+        color: #9999ff;
+        border-radius: 6px;
+    }
+    #suscribebtn:hover{
+        background-color: #9999ff;
+        color: #141415;
+    }
+    .foot h5 {
+        font-size: 1.3em;
+    }
+    .foot  span{
+        display: block;
+        padding: 5px 0;
+    }
+    .foot div .fab {
+        padding: 10px;
+        font-size: 1.3em;
+        color: white;
+    }
+}
+
+
+
+    /*  MOBILE  */
+@media only screen and (max-width: 600px){
+
+    footer{
+        width: 100%;
+        background-color: #141415;
+        color: white;}
+
+    /* SPONSORS */
+        .sponsors{
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: repeat(7 1fr);
+            justify-content: center;
+            text-align: center;
+        }
+        .sponsors div img{
+            height: 40px;
+            padding: 15px 0;
+        }
+         h2 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+             margin-top: 50px 0;
+        }
+    /* CONTACT */
+        .contact{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .footform{
+            display:grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type=text]{
+            border: none;
+            border-bottom: 1px solid #9999ff;
+            color: #9999ff;
+            background-color: #141415;
+            color: white;
+            margin: 10px 0;
+        }
+        textarea:focus, input:focus{
+            outline: none;
+        }
+        input::placeholder, textarea::placeholder {
+          color: #9999ff;
+        }
+
+        #message {
+        height: 100px;
+        width: 90%;
+        background-color: #141415;
+        border: 1px solid #9999ff;
+        border-radius: 8px;
+        padding: 10px 10px;
+        resize: none;
+        color: white;
+    }
+        #sendbtn {
+        margin-top: 8%;
+        border: 1px solid #9999ff;
+        background-color: #141415;
+        color: #9999ff;
+        border-radius: 8px;
+        padding-bottom: 5px;
+        width: 100%;
+
+    }
+
+        #suscribebtn:hover, #sendbtn:hover{
+        background-color: #9999ff;
+        color: #141415;
+    }
+
+    /*        FOOOT           */
+        .foot {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            color: rgb(255, 255, 255 0.3):
+        }
+
+        .foot>div:first-child{
+            margin: 15px 0;
+            border-top: 1px solid #9999ff;
+        }
+        .foot>div:nth-child(2){
+            border-top: 1px solid #9999ff;
+            border-bottom: 1px solid #9999ff;
+            padding: 25px 0;
+        }
+        .foot>div:last-child{
+            border-top: 1px solid #9999ff;
+            margin-top: 15px;
+            font-size: 10px;
+            padding: 10px 0;
+        }
+        .foot img {
+            height: 20px;
+        }
+
+        .foot  h5 {
+            font-size: 20px;
+        }
+
+        .foot  span{
+        display: block;
+        padding: 5px 0;
+        }
+
+        #suscribebtn{
+            border: 1px solid #9999ff;
+            background-color: #141415;
+            color: #9999ff;
+            border-radius: 8px;
+            padding-bottom: 5px;
+        }
+
+        .foot div .fab{
+            padding: 10px;
+            color: white;
+        }
+}
