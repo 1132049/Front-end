@@ -1229,6 +1229,10 @@ section {
 		    align-items: center;
 		    justify-content: center;
 		}
+		
+		#contacth{
+		   text-align: center;
+		}
 
 		input[type=text]{
 		    border: none;
