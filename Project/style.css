@@ -124,7 +124,8 @@ header {
     text-align: left;
   }
 }
-  
+ 
+/* speakers section */
 #speakers-section { 
 	padding-bottom: 20px;
 }
@@ -134,31 +135,17 @@ header {
 	text-align: center;
 	color: white;
 	margin: 40px 0;
-	padding: 0 0;
+	padding: 0;
 }
 
 .speakers-heading { 
 	text-align: center;
 	font-size: 60px;
 	color:white;
-	padding: 0 0;
+	padding: 0;
 }
 
 .panels-container { 
-	opacity: 0;
-	margin: 0 auto;
-}
-
-* {
-	font-family: 'Didact Gothic', sans-serif;
-}
-
-.panel { 
-	display: inline-block;
-	margin-bottom: 25px;
-}
-
-.panel , .panels-container { 
 	text-align: center;
 }
 
@@ -183,26 +170,29 @@ header {
 	filter: grayscale(0%); /* FF 35+ */	
 }
 
-/* shake */
-.speaker-image:hover + h3{
+/* name shake */
+.speaker-image:hover + h3 {
 	animation: shake 0.62s cubic-bezier(.36,.07,.19,.97) both;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
 	perspective: 1000px;
 }
 
+/* increase image size */
 .speaker-image { 
 	-moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
+/* increase image size */
 .speaker-image:hover  {
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.04);
 }
 
+/* shake */
 @keyframes shake {
 	80%, 100% {
 		transform: translate3d(-1px, 0, 0);
@@ -219,38 +209,6 @@ header {
 	80%, 60% {
 		transform: translate3d(1px, 0, 0);
 	}
-}
-
-#speakers-section { 
-	padding-bottom: 20px;
-}
-
-body { 
-	background-color: #141415;
-}
-
-#speakers-title { 
-	font-size: 35px;
-	text-align: center;
-	color: white;
-	margin: 40px 0;
-	padding: 0 0;
-}
-
-.speakers-heading { 
-	text-align: center;
-	font-size: 60px;
-	color:white;
-	padding: 0 0;
-}
-
-.panels-container { 
-	opacity: 1;
-	margin: 0 auto;
-}
-
-* {
-	font-family: 'Didact Gothic', sans-serif;
 }
 
 .panel-block { 
@@ -262,69 +220,7 @@ body {
 	text-align: center;
 }
 
-.name , .profession { 
-	margin-top: 18px;
-	margin-bottom: 5px;
-	color: white;
-}
-
-.panels-container, #tag, .modal-body , .modal-text { 
-	margin: 0 auto;
-}
-
-/* image grayscale */
-.speaker-image {
-	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-	filter: grayscale(100%); /* FF 35+ */
-}
-
-.speaker-image:hover {
-	-webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-	filter: grayscale(0%); /* FF 35+ */	
-}
-
-
-/* shake */
-.speaker-image:hover + h3{
-	animation: shake 0.62s cubic-bezier(.36,.07,.19,.97) both;
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
-	perspective: 1000px;
-}
-
-
-.speaker-image { 
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.speaker-image:hover  {
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.04);
-}
-
-
-@keyframes shake {
-	80%, 100% {
-		transform: translate3d(-1px, 0, 0);
-	}
-
-	80%, 30% {
-		transform: translate3d(1px, 0, 0);
-	}
-
-	70%, 80%, 70% {
-		transform: translate3d(-1px, 0, 0);
-	}
-
-	80%, 60% {
-		transform: translate3d(1px, 0, 0);
-	}
-}
-
-/* The Modal (background) */
+/* modal (background) */
 .modal {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
@@ -351,6 +247,7 @@ body {
 	padding: 7px 5px;
 }
 
+/* tag in modal */
 #tag {
 	font-size: 35px;
 	color: black;
@@ -360,7 +257,7 @@ body {
 	text-align: center;
 }
 
-/* The Close Button */
+/* close button */
 .fa-close { 
 	color: black;
 	float: right;
@@ -397,8 +294,8 @@ body {
 }
 
 .head h2 , .links h4 {
-	padding: 0 0;
-	margin: 0 0;
+	padding: 0;
+	margin: 0;
 }
 
 .modal-body { 
@@ -555,6 +452,7 @@ a .social-icon , .links h4 {
 	.links { 
 		padding-top: 18px;
 	}
+	
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) { 
@@ -627,7 +525,7 @@ a .social-icon , .links h4 {
 		padding-left: 40px;
 	}
 
-	.links a i{ 
+	.links a i { 
 		margin-bottom: 15px;
 	}
 
@@ -698,12 +596,10 @@ a .social-icon , .links h4 {
 	a .social-icon , a .icon-text  { 
 		font-size: 15px;
 	}
+	
 }
 
-* {
-	font-family: 'Didact Gothic', sans-serif;
-}
-
+/* past events section */
 #events-title {
 	font-size: 35px;
 	text-align: center;
@@ -716,7 +612,7 @@ a .social-icon , .links h4 {
 }
 
 #events-title , .container { 
-	padding: 0 0;
+	padding: 0;
 }
 
 .carousel-wrapper {
@@ -754,9 +650,11 @@ a .social-icon , .links h4 {
 		width: 85%;
 		margin: 0 auto;
 	}
+	
 }
 
 @media only screen and (max-width: 600px) { 
+	
 	.carousel-text { 
 		font-size: 15px;
 	}
@@ -766,12 +664,13 @@ a .social-icon , .links h4 {
 	}
 
 	.container { 
-		padding: 0 0;
+		padding: 0;
 	}
 
 	.carousel-wrapper {
 		width: 100%;	
 	}
+	
 }
   
 
