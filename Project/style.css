@@ -607,11 +607,7 @@ a .social-icon , .links h4 {
 	margin: 40px 0;
 }
 
-.container {
-	height: auto;
-}
-
-#events-title , .container { 
+#events-title { 
 	padding: 0;
 }
 
@@ -620,7 +616,7 @@ a .social-icon , .links h4 {
 	margin: 0 auto;
 }
 
-.carousel-inner, .item img , .container {
+.carousel-inner, .item img {
 	width: 100%;
 }
 
@@ -661,10 +657,6 @@ a .social-icon , .links h4 {
 
 	.carousel-caption { 
 		margin-bottom: 1px;
-	}
-
-	.container { 
-		padding: 0;
 	}
 
 	.carousel-wrapper {
