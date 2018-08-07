@@ -348,10 +348,12 @@ a .social-icon , .links h4 {
 		display: flex;
 		width: 75%;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	.panel-block { 
-		max-width: 33%;	
+		width: 30%;	
+		text-align: center;
 	}
 
 	.name { 
@@ -363,7 +365,7 @@ a .social-icon , .links h4 {
 	}
 
 	.speaker-image { 
-		width: 63%;
+		width: 100%;
 	}
 
 	.modal-content {
@@ -407,14 +409,16 @@ a .social-icon , .links h4 {
 		display: flex;
 		flex-wrap: wrap;
 		width: 80%;
+		justify-content: space-between;
 	}
 
 	.panel-block { 
-		max-width: 49%;
+		max-width: 40%;
+		text-align: center;
 	}
 
 	.speaker-image { 
-		width: 63%;
+		width: 100%;
 	}
 
 	.name { 
@@ -465,11 +469,12 @@ a .social-icon , .links h4 {
 	}
 
 	.panel-block { 
-		max-width: 49%;
+		max-width: 40%;
+		text-align: center;
 	}
 
 	.speaker-image { 
-		width: 72%;
+		width: 100%;
 	}
 
 	.panel-last { 
@@ -535,15 +540,25 @@ a .social-icon , .links h4 {
 @media only screen and (max-width: 600px) { 
 	
 	.panels-container {
-		width: 90%;
+		width: 80%;
 	}
 
 	.panel-block { 
-		max-width: 100%;	   
+		max-width: 100%;
+		text-align: center;
 	}
 
-	.name , .manager { 
+	.name { 
+		margin-top: 30px;
+		font-size: 25px;
+	}
+	
+	.profession { 
 		font-size: 20px;
+	}
+	
+	.speaker-image { 
+		width: 100%;
 	}
 
 	#tag { 
@@ -578,10 +593,6 @@ a .social-icon , .links h4 {
 
 	.modal-name { 
 		font-size: 25px;
-	}
-
-	.speaker-image { 
-		width: 60%;
 	}
 
 	.links i { 
