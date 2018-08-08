@@ -538,7 +538,7 @@ a .social-icon , .links h4 {
 @media only screen and (max-width: 600px) { 
 	
 	.panels-container {
-		width: 90%;
+		width: 40%;
 	}
 
 	.panel-block { 
