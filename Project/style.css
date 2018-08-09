@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* fixes big space on the right side */
+/*---fixes big space on the right side---*/
 html,body { 
 	padding: 0px;
 	margin: 0px;
@@ -12,35 +12,27 @@ html,body {
 	overflow-x: hidden;
 }
 
-header {
-  margin: 0 auto;
-}
-
+/*---header ---*/
 .logo {
-  height: 20%;
-  width: 20%;
-  padding: 2%;
+  height: 80px;
+  width: 200px;
+  padding: 10px;
 }
 
-/*---NAV BAR*/
+/*---nav bar---*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
-}
-
-.nav-cont { 
-  width: 70%;
-   margin: 0 auto;
+  background-color: #141415;
 }
 
 .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 30px;
+  padding: 15px 30px;
   text-decoration: none;
-  font-size: 20px;
-   width: 150px;
+  font-size: 15px;
+  width: 150px;
 }
 
 .top-nav .active {
@@ -48,41 +40,14 @@ header {
   color: white;
 }
 
+.nav-cont {
+width: 70%;
+margin: 0 auto;
+height: 100%;
+}
+
 .topnav .icon {
   display: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 17px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 20px 16px;
-    background-color: #212F46;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
@@ -90,44 +55,75 @@ header {
   color: white;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: flex;
-  }
+.logo-wrapper { 
+height: 80px;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+@media screen and (max-width: 768px) {
+  
+  .logo { 
+   height: 70px;
+   width: 180px;
+   padding: 13px;
+   }
+	
+   .logo-wrapper { 
+   text-align: center;
+   }
+   
+  .nav-cont { 
+   width: 90%;
+   }
+	
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+   display: none;
+   }
+
+  .topnav a.icon {
+   float: right;
+   display: flex;
+   }
+	
+  .topnav a {
+   font-size: 15px;
+   width: 80px;
+   padding: 10px;
+   }
+	
+  .topnav.responsive {
+   position: relative;
+   }
+	
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+	
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+	
+  .topnav.responsive .dropdown {
+   float: none;
+   }
+	
+  .topnav.responsive .dropdown-content {
+   position: relative;
+   }
+	
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
   }
+	
 }
 
 section {
