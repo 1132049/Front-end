@@ -15,32 +15,21 @@
 	<body>
             <div class="wrapper"> 
 		<header>
-		    <img class="logo" src="Images/logo.png" alt="logo" >
-<!-- --------Nav bar -->
- 		    <div class="topnav" id="myTopnav">
+		    <div class = "logo-wrapper">
+		      <img class="logo" src="Images/logo.png" alt="logo"/>
+		    </div>
+		    <!---Nav bar--->
+		 <div class = "nav-cont">
+ 		     <div class="topnav" id="myTopnav">
   		       <a href="#home" class="active">About</a>
  		       <a href="#agenda">Agenda</a>
                        <a href="#speakers">Speakers</a>
                        <a href="#FAQ">FAQ</a>
                        <a href="#tickets">Tickets</a>
                        <a href="#blog">Blog</a>
-                   <div class="dropdown">
-    			<button class="dropbtn">Dropdown 
-                          <i class="fa fa-caret-down"></i>
-    			</button>
-    		   <div class="dropdown-content">
-    		      <a href="#">About</a>
-    		      <a href="#">Agenda</a>
-     	              <a href="#">Speakers</a>
-     		      <a href="#">FAQ</a>
-      		      <a href="#">Tickets</a>
-      		      <a href="#">Blog</a>
-    		</div>
-  </div> 
-
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-
+  	 	       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	     	    </div>
+	         </div>
 <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
