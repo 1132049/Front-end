@@ -2,7 +2,6 @@ body {
     color: #141415;
     font-family: 'Didact Gothic', sans-serif;
 }
-
 .wrapper {
     width: 70%;
     margin: 0 auto;
@@ -11,73 +10,76 @@ header {
     height: auto;
     width: 100%;
     background-color: white;
-    position: fixed;
-    
-
+    position: fixed; 
+    border-bottom: 1px solid rgba(20, 20, 21, 0.09);   
 }
-.logo {
-    position: relative;
-    margin: 1% 0;
-    background-image: url("images/logo-blog-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 75px;
-    width: 25%;
-    /*margin-left:auto; 
-    margin-right:0;*/
+.flex-container, .flex-container-2, #desc {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-div.logo a {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        text-decoration: none; /* No underlines on the link */
-        z-index: 10; /* Places the link above everything else in the div */
-        background-color: #FFF; /* Fix to make div clickable in IE */
-        opacity: 0; /* Fix to make div clickable in IE */
-        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
-    }
-#space {
+.flex-container {
     justify-content: space-between;
     align-items: center;
+    padding: 1% 0;
 }
-
+#logo {
+    background-image: url("images/logo-blog-1.png");
+    position: relative;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 25%;
+    margin: 1% 0;
+}
+div > #logo > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; 
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1);  /*Fix to make div clickable in IE */
+}
 #home-button {
-
-    border: 1.5px solid #0e6f8c;
     color: white;
-    background-color: #0e6f8c; 
-    
+    background-color: #0e6f8c;     
     padding: 1%;    
-}
- 
- a:hover, #home-button:hover {
-    font-weight: bold;
-    
 }
 a {
     text-decoration: none;
     color: white;
-
 }
-
-.flex-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2% 0;
+a:hover, #home-button:hover {
+    font-weight: bold;
+    cursor: pointer;    
 }
-
+.flex-container-2{
+    flex-direction: row;
+    padding:  3vh 0;
+}
 .avatar, #desc {
-    margin-top: 150px;   
-    height: 100px;
+    margin-top: 15vh;   
+    height: 15vh;
     width: 15%;
+}
+.avatar {    
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: left;
 }
-
+#desc {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+}
+#desc > p:first-child {
+    padding-bottom: 1vh;
+    font-weight: bold;
+}
 #dv {
     background-image: url("images/dv.png");
 }
@@ -93,68 +95,113 @@ a {
 #il {
     background-image: url("images/il.png");
 }
-#desc >  p:first-child {
-    font-weight: bold;
-}
-
 #heading {
-    height: 350px;
+    height: 45vh;
     width: 100%;
     background-image: url('images/pic-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2% 0;
     text-align: center;
     line-height: 300px;
     vertical-align: middle;
     color: white;
+    font-size: 2vw;
 }
-
-h1 {
-    font-size: 5vw;
+p{
+    -webkit-margin-before: 0; /*Inspectinau, nes nesupratau kai kuriu tarpu kilmes - issiaiskinau, kad yra taikoma -webkit-margin*/
+    -webkit-margin-after: 0; /*Inspectinau, nes nesupratau kai kuriu tarpu kilmes - issiaiskinau, kad yra taikoma -webkit-margin*/
 }
-
 article {
     text-align: justify;
     margin: 5% 0;
 }
-
-/*.resp.cont {
-    position: relative;
-    overflow: hidden;
-    
-}*/
 iframe {
     margin: 2% auto;
     display: block;
     height: 315px;
     width: 100%;
+    border-width: 0px;
 }
-
-
+#written-by {
+    display: none;
+}
 @media only screen and (max-width: 600px){
+
 .wrapper {
-    display: block;
-    width: 90%;
+    width: 95%;
     height: auto;
-
 }
-
+.flex-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#logo {
+    background-position: center;
+    margin: 2% auto;
+    height: 10vh;
+    width: 37%;
+    order: 1;
+}
+#home-button {
+    max-width: 40%;
+    height: auto;
+    margin: 2vh auto;
+    order: 2;
+    font-size: 3vw;
+}
+.avatar, #desc {
+    display: none;
+}
 iframe {
     margin: 2% auto;
     height: 315px;
     width: 100%;
  }
-
-
-
+ #written-by{
+    display: block;
+    margin: 3vh 0;
+    font-style: italic;
+}
+}
 
 @media only screen and (min-width: 601px) and (max-width:1200px) {
- 
- iframe {
+.wrapper {
+    width: 80%;
+    height: auto;
+}
+.flex-container {
+    display: flex; 
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    background-position: left;
+    margin: 2% 0;
+    height: 10vh;
+    width: 37%;
+    order: 1;
+}
+#home-button {
+    max-width: 40%;
+    height: auto;
+    order: 2;
+    font-size: 2vw;
+}
+.avatar, #desc {
+    display: none;
+}
+iframe {
     margin: 2% auto;
     height: 315px;
     width: 100%;
  }
-
+ #written-by{
+    display: block;
+    margin: 3vh 0;
+    font-style: italic;
+}
 }
