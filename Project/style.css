@@ -173,13 +173,12 @@ section {
     font-size: 30px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-
+.front-btn a { 
+text-decoration: none;
+color: white;
 }
 
-a:hover {
+.front-btn a:hover {
     color: #84b9d4;
 }
 
@@ -213,11 +212,11 @@ a:hover {
 	}
 	
 	.front-h { 
-	font-size: 30px;
+	font-size: 2.3em;
 	}
 	
 	.front-cont { 
-	font-size: 25px;
+	font-size: 22px;
 	}
 	
 	.front-btn { 
@@ -226,35 +225,57 @@ a:hover {
 }
 
 /*---About us*/
-
 #section-2 {
-  background-image: url("Images/img-2.png");
-  opacity: 0.2;
-  background-position: bottom;  
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+	background-image: url("Images/img-2.png");
+	background-position: bottom;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	padding: 30px;
 }
 
 /*---Speakers*/
 #section-3 {
   background-image: url(Images/img-3.png);
-  opacity: 0.08;
-  vertical-align: middle;
   background-size: cover;
+}
+
+#about-us { 
+	margin: 0;
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.about-container { 
+	width: 70%;
+	margin: 0 auto;
+	color: white;
+}
+
+#about-article { 
+	margin-top: 30px;
+	font-size-adjust: auto;
+}
+
+@media screen and (max-width: 600px) {
+
+	.about-container { 
+		width: 90%;
+	}
 }
 
 /* speakers section */
 #speakers-section { 
-	padding-bottom: 20px;
+   padding-bottom: 20px;
 }
 
 #speakers-title { 
-	font-size: 35px;
+	font-size: 2em;
 	text-align: center;
 	color: white;
-	margin: 40px 0;
-	padding: 0;
+	margin: 30px;
+	text-transform: uppercase;
 }
 
 .speakers-heading { 
@@ -753,24 +774,22 @@ width: 100%;
   background-repeat: no-repeat;
   background-position: right ;
   background-size: cover;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #events-title {
-	font-size: 35px;
+	font-size: 2em;
 	text-align: center;
-	color: white;
-	margin: 40px 0;
-}
-
-#events-title { 
+	color: white; 
 	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 .carousel-container { 
 	width: 70%;
-	padding: 0;
+	padding-top: 30px;
 	margin: 0 auto;
 }
 
