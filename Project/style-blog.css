@@ -4,32 +4,25 @@ body {
 }
 .wrapper {
     display: flex;
-    flex-wrap: wrap;          
+    flex-wrap: wrap;  
+    width: 100%;
+    height: 100vh;        
 }
 .box {
     flex: 32%;
-    height: 330px;
+    height: 50%;
     max-width: 100%;   
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    background-position: center;   
 }
- 
-    
-
-
 #box-1{
     background-image: url('images/logo-blog-2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #141415;
-    background-position: center;
     box-shadow: none;
-
-   
 }
 #box-2 {
     background-image: url('images/pic-2.jpg');
@@ -46,15 +39,12 @@ body {
 #box-6{
     background-image: url('images/pic-6.jpg');
 }
-
-
 .text {
     width: 200px; 
     height: 200px;   
     vertical-align: middle;
-    text-align: center;
- /*   margin: 30% auto;*/
- }
+    text-align: center; 
+}
 a {
     color: white;
     text-decoration: none;
@@ -65,20 +55,15 @@ a:hover {
  }
 
 @media only screen and (max-width: 600px){
+
 .wrapper {
     display: block;
 }
 }
 
 @media only screen and (min-width: 601px) and (max-width:1200px) {
-  .wrapper {
-    display: flex;
-}  
-.box{
+
+.box {
     flex:50%;
 }
 }
-
-
-/*@media only screen and (min-width: 601px) and (max-width:1200px)
-@media only screen and (min-width:1201px);*/
