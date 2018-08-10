@@ -298,18 +298,13 @@ a:hover {
 	perspective: 1000px;
 }
 
-/* increase image size */
 .speaker-image { 
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-/* increase image size */
 .speaker-image:hover  {
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.04);
+	cursor: -webkit-grab; 
+	cursor: grab;
 }
 
 /* shake */
@@ -356,21 +351,21 @@ a:hover {
 .modal-content {
 	background-color: white;
 	margin: 50px auto;
-	border: solid 2px white;
 	border-radius: 7px;
-	box-shadow: 23px 18px #e1e1ea;
 	height: auto;
 }
 
 .modal-header { 
-	background-color: beige;
+	background-color: #84b9d4;
 	padding: 7px 5px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
 }
 
 /* tag in modal */
 #tag {
 	font-size: 35px;
-	color: black;
+	color: white;
 	margin: 0 auto;
 	font-family: arial;
 	font-weight: 1000;
@@ -379,33 +374,27 @@ a:hover {
 
 /* close button */
 .fa-close { 
-	color: black;
 	float: right;
+}
 
+.fa-close:hover { 
+	cursor: -webkit-grab;
+	cursor: grab;
 }
 
 .modal-header .fa-close { 
 	font-size: 50px; 
-	color: black;
+	color: white;
 }
 
 .modal-text { 
-	color: black;
+	color: white;
 	font-size: 20px;
 	float: left;
 }
 
 .modal-image { 
 	width: 30%;
-	border: solid 1px #CCC;
-	-moz-box-shadow: 5px 5px 0px #e1e1ea;
-	-webkit-box-shadow: 5px 5px 0px #e1e1ea;
-	box-shadow: 5px 5px 0px #e1e1ea;
-}
-
-.modal-body { 
-	height: auto;
-	padding: 20px 8px;
 }
 
 .modal-body p {
@@ -419,6 +408,7 @@ a:hover {
 }
 
 .modal-body { 
+	height: auto;
 	padding: 20px 20px;
 	width: auto;
 }
@@ -426,6 +416,10 @@ a:hover {
 .links i { 
 	display: block;
 	margin-top: 15px;
+}
+
+.links i:hover { 
+	color: #84b9d4;
 }
 
 .links h4 {
@@ -455,7 +449,7 @@ a .social-icon , .links h4 {
 
 .links a { 
 	color: black;
-	text-decoration: none
+	text-decoration: none;
 }
 
 .modal-image { 
@@ -493,7 +487,7 @@ a .social-icon , .links h4 {
 
 	.modal-header { 
 		padding: 7px 5px;
-		background-color: beige;
+		background-color: #84b9d4;
 	}
 
 	.modal-image {
@@ -656,7 +650,7 @@ a .social-icon , .links h4 {
 @media only screen and (max-width: 600px) { 
 	
 	.panels-container {
-		width: 40%;
+		width: 60%;
 	}
 
 	.panel-block { 
@@ -666,11 +660,11 @@ a .social-icon , .links h4 {
 
 	.name { 
 		margin-top: 30px;
-		font-size: 25px;
+		font-size: 21px;
 	}
 	
 	.profession { 
-		font-size: 20px;
+		font-size: 18px;
 	}
 	
 	.speaker-image { 
@@ -683,7 +677,6 @@ a .social-icon , .links h4 {
 
 	.modal-header .fa-close { 
 		font-size: 35px; 
-		color: black;
 	}
 
 	.modal-content {
