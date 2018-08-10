@@ -214,7 +214,7 @@ color: white;
 @media only screen and (max-width: 600px) {
 	
 	#section-1 {
-        min-height: 350px;
+        min-height: 300px;
 	}
 	
 	.front-h { 
@@ -269,6 +269,10 @@ color: white;
 
 	.about-container { 
 		width: 90%;
+	}
+	
+	#about-article { 
+		font-size: 15px;
 	}
 }
 
