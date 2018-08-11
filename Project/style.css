@@ -52,7 +52,7 @@ html,body {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-	background-color: rgba(132, 185, 212, 0.5)
+	background-color: rgba(132, 185, 212, 0.5);
 		color: white;
 }
 
