@@ -1,6 +1,6 @@
 body {
   background-color: #141415;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 /*---fixes big space on the right side---*/
@@ -23,6 +23,7 @@ html,body {
 .topnav {
   overflow: hidden;
   background-color: #141415;
+  margin: 0 auto;
 }
 
 .topnav a {
@@ -31,7 +32,7 @@ html,body {
   text-align: center;
   padding: 15px 30px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   width: 150px;
 }
 
@@ -51,7 +52,7 @@ height: 100%;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+ 	background-color: rgba(132, 185, 212, 0.5)
   color: white;
 }
 
@@ -59,16 +60,21 @@ height: 100%;
     display: block;
 }
 
-.logo-wrapper { 
-height: 80px;
+#logo { 
+	background-image: url('images/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 9vh;
+	width: auto;
+	margin: 4vh 
+
 }
 
 @media screen and (max-width: 768px) {
   
-  .logo { 
-   height: 70px;
-   width: 180px;
-   padding: 13px;
+  #logo { 
+   margin: 0 auto;
+   background-position: center;
    }
 	
    .logo-wrapper { 
@@ -76,7 +82,7 @@ height: 80px;
    }
    
   .nav-cont { 
-   width: 90%;
+   width: 100%;
    }
 	
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -93,7 +99,7 @@ height: 80px;
   .topnav a {
    font-size: 15px;
    width: 80px;
-   padding: 10px;
+   padding: 7px;
    }
 	
   .topnav.responsive {
@@ -131,6 +137,7 @@ height: 80px;
 section {
   min-height: 700px;
   width: auto;
+
 }
 
 /*---Front page*/
@@ -139,12 +146,11 @@ section {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    padding: 30px;
+    
 }
 
 .text-wrapper {
     color: white;
-    font-family: 'Didact Gothic', sans-serif;
     letter-spacing: 3px;
     text-align: center;
     width: 70%;
@@ -153,21 +159,24 @@ section {
 
 .front-h {
     text-transform: uppercase;
-    font-size: 55px;
+    font-weight: bold;
+    font-size: 4vw;
 }
 
 .front-cont {
      font-variant: small-caps;
-     font-size: 40px;
+     font-weight: bold;
+    font-size: 3vw;
 }
 
 .front-btn { 
     border: none;    
     background-color: transparent;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
     color: white;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 4px 12px ;
     margin-top: 20px;
     font-size: 30px;
 }
@@ -237,16 +246,9 @@ color: white;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	padding: 30px;
 }
 
-/*---Speakers*/
-#section-3 {
-  background-image: url(Images/img-3.png);
-  background-size: cover;
-}
-
-#about-us { 
+	#about-us { 
 	margin: 0;
 	text-align: center;
 	font-size: 2em;
@@ -257,13 +259,24 @@ color: white;
 	width: 70%;
 	margin: 0 auto;
 	color: white;
+	margin: 8%;
 }
 
 #about-article { 
 	margin-top: 30px;
 	font-size-adjust: auto;
 	font-size: 18px;
+	text-align: justify;	
 }
+
+/*---Speakers*/
+#section-3 {
+  background-image: url(Images/img-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -383,12 +396,15 @@ color: white;
 .modal-content {
 	background-color: white;
 	margin: 50px auto;
+	border-radius: 7px;
 	height: auto;
 }
 
 .modal-header { 
 	background-color: #84b9d4;
 	padding: 7px 5px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
 }
 
 /* tag in modal */
@@ -434,6 +450,7 @@ color: white;
 .head h2 , .links h4 {
 	padding: 0;
 	margin: 0;
+	font-family: 'Didact Gothic', sans-serif;
 }
 
 .modal-body { 
@@ -455,7 +472,6 @@ color: white;
 	display: inline;
 	margin-left: 8px;
 	font-size: 14px;
-	font-family: "Axis", "Helvetica", sans-serif;
 	font-weight: 600;
 
 }
@@ -479,6 +495,10 @@ a .social-icon , .links h4 {
 .links a { 
 	color: black;
 	text-decoration: none;
+}
+
+.modal-image { 
+	border-radius: 8px;
 }
 
 @media only screen and (min-width: 1201px) { 
@@ -744,17 +764,22 @@ a .social-icon , .links h4 {
 }
 
 /*---Agenda*/
+#agenda {
+	margin: 3% auto;
+	margin: 10% 0;
+	opacity: 1;
+	color: white;
 
+}
 #section-4 {
-  margin: 0;
-  left: 0;
+  margin: 0 auto;
+  
   width: 70%;
-  height: 100%;
-  					 
-  font-family: 'Montserrat', sans-serif;
+  height: auto;
 }
 .agendasectionh1{
   text-align: center;
+  padding-bottom:4%;
 }
 .time {
   padding: 10px;
