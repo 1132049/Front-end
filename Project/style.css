@@ -1003,7 +1003,7 @@ a .social-icon , .links h4 {
 		border: none;
 		border-bottom: 1px solid #84b9d4;
 		color: white;
-		background-color: #141415;
+		background-color: transparent;
 		padding-top: 20px;
 		padding-right: 20px;
 	}
@@ -1031,7 +1031,7 @@ a .social-icon , .links h4 {
 	#message {
 		height: 200px;
 		width: 80%;
-		background-color: #141415;
+		background-color: transparent;
 		border: 1px solid #84b9d4;
 		border-radius: 8px;
 		padding: 10px 10px;
@@ -1041,7 +1041,7 @@ a .social-icon , .links h4 {
 	#sendbtn {
 		margin-top: 8%;
 		border: 1px solid #84b9d4;
-		background-color: #141415;
+		background-color: transparent;
 		color: #84b9d4;
 		border-radius: 8px;
 		padding-bottom: 5px;
@@ -1052,6 +1052,13 @@ a .social-icon , .links h4 {
 		background-color: #84b9d4;
 		color: #141415;
 	}
+
+#contact {
+	background-image: url('Images/img-7.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+}
 
 	/*        FOOOT           */
 	footer {
