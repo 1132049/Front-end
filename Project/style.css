@@ -975,7 +975,8 @@ a .social-icon , .links h4 {
 		grid-column: span 3;
 	}
 	.imgsponsors{
-		height: 60px;
+		height: 80px;
+		width: auto;
 		padding: 15px 0;
 	}
 
