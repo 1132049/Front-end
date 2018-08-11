@@ -383,15 +383,12 @@ color: white;
 .modal-content {
 	background-color: white;
 	margin: 50px auto;
-	border-radius: 7px;
 	height: auto;
 }
 
 .modal-header { 
 	background-color: #84b9d4;
 	padding: 7px 5px;
-	border-top-right-radius: 6px;
-	border-top-left-radius: 6px;
 }
 
 /* tag in modal */
@@ -482,10 +479,6 @@ a .social-icon , .links h4 {
 .links a { 
 	color: black;
 	text-decoration: none;
-}
-
-.modal-image { 
-	border-radius: 8px;
 }
 
 @media only screen and (min-width: 1201px) { 
