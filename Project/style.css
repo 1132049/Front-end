@@ -1035,7 +1035,7 @@ a .social-icon , .links h4 {
 		margin-top: 8%;
 		border: 1px solid #84b9d4;
 		background-color: #141415;
-		color: #9999ff;
+		color: #84b9d4;
 		border-radius: 8px;
 		padding-bottom: 5px;
 		width: 50%;
@@ -1083,7 +1083,7 @@ a .social-icon , .links h4 {
 	#suscribebtn{
 		border: 1px solid #84b9d4;
 		background-color: #141415;
-		color: #9999ff;
+		color: #84b9d4;
 		border-radius: 6px;
 	}
 	#suscribebtn:hover{
@@ -1160,7 +1160,7 @@ a .social-icon , .links h4 {
 	input[type=text]{
 		width: 30%;
 		border: none;
-		border-bottom: 1px solid #9999ff;
+		border-bottom: 1px solid #84b9d4;
 		color: white;
 		background-color: #141415;
 		padding-top: 20px;
@@ -1180,14 +1180,14 @@ a .social-icon , .links h4 {
 		outline: none;
 	}
 	input::placeholder, textarea::placeholder {
-		color: #9999ff;
+		color: #84b9d4;
 	}
 
 	#message {
 		height: 200px;
 		width: 80%;
 		background-color: #141415;
-		border: 1px solid #9999ff;
+		border: 1px solid #84b9d4;
 		border-radius: 8px;
 		padding: 10px 10px;
 		resize: none;
@@ -1195,7 +1195,7 @@ a .social-icon , .links h4 {
 	}
 	#sendbtn {
 		margin-top: 8%;
-		border: 1px solid #9999ff;
+		border: 1px solid #84b9d4;
 		background-color: #141415;
 		color: #9999ff;
 		border-radius: 8px;
@@ -1204,7 +1204,7 @@ a .social-icon , .links h4 {
 	}
 
 	#suscribebtn, #sendbtn:hover{
-		background-color: #9999ff;
+		background-color: #84b9d4;
 		color: #141415;
 	}
 
@@ -1243,13 +1243,13 @@ a .social-icon , .links h4 {
 	}
 
 	#suscribebtn{
-		border: 1px solid #9999ff;
+		border: 1px solid #84b9d4;
 		background-color: #141415;
 		color: #9999ff;
 		border-radius: 6px;
 	}
 	#suscribebtn:hover{
-		background-color: #9999ff;
+		background-color: #84b9d4;
 		color: #141415;
 	}
 	.foot h5 {
@@ -1311,8 +1311,8 @@ a .social-icon , .links h4 {
 
 	input[type=text]{
 		border: none;
-		border-bottom: 1px solid #9999ff;
-		color: #9999ff;
+		border-bottom: 1px solid #84b9d4;
+		color: #84b9d4;
 		background-color: #141415;
 		color: white;
 		margin: 10px 0;
@@ -1328,7 +1328,7 @@ a .social-icon , .links h4 {
 		height: 100px;
 		width: 90%;
 		background-color: #141415;
-		border: 1px solid #9999ff;
+		border: 1px solid #84b9d4;
 		border-radius: 8px;
 		padding: 10px 10px;
 		resize: none;
@@ -1336,9 +1336,9 @@ a .social-icon , .links h4 {
 	}
 	#sendbtn {
 		margin-top: 8%;
-		border: 1px solid #9999ff;
+		border: 1px solid #84b9d4;
 		background-color: #141415;
-		color: #9999ff;
+		color: #84b9d4;
 		border-radius: 8px;
 		padding-bottom: 5px;
 		width: 100%;
@@ -1346,7 +1346,7 @@ a .social-icon , .links h4 {
 	}
 
 	#suscribebtn:hover, #sendbtn:hover{
-		background-color: #9999ff;
+		background-color: #84b9d4;
 		color: #141415;
 	}
 
@@ -1360,15 +1360,15 @@ a .social-icon , .links h4 {
 
 	.foot>div:first-child{
 		margin: 15px 0;
-		border-top: 1px solid #9999ff;
+		border-top: 1px solid #84b9d4;
 	}
 	.foot>div:nth-child(2){
-		border-top: 1px solid #9999ff;
-		border-bottom: 1px solid #9999ff;
+		border-top: 1px solid #84b9d4;
+		border-bottom: 1px solid #84b9d4;
 		padding: 25px 0;
 	}
 	.foot>div:last-child{
-		border-top: 1px solid #9999ff;
+		border-top: 1px solid #84b9d4;
 		margin-top: 15px;
 		font-size: 10px;
 		padding: 10px 0;
@@ -1388,9 +1388,9 @@ a .social-icon , .links h4 {
 	}
 
 	#suscribebtn{
-		border: 1px solid #9999ff;
+		border: 1px solid #84b9d4;
 		background-color: #141415;
-		color: #9999ff;
+		color: #84b9d4;
 		border-radius: 8px;
 		padding-bottom: 5px;
 	}
