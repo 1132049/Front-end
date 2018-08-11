@@ -1069,7 +1069,6 @@ a .social-icon , .links h4 {
 	.foot>div:last-child{
 		grid-column:span 3;
 		width: 100%;
-		border-top: 1px solid white;
 		padding-top: 10px;
 	}
 	.lastlogo {
