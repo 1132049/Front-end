@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 	<head>	
-		<title> Homework </title>	
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<title>Stepforward 2018</title>	
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="normalize.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,17 +13,17 @@
 	</head>
 	
 	<body>
-            <div class="wrapper"> 
+             
 		<header>
-		    <div class = "logo-wrapper">
-		      <img class="logo" src="Images/logo.png" alt="logo"/>
-		    </div>
+		    <div id = "logo"></div>
 		    <!---Nav bar--->
+		    
 		 <div class = "nav-cont">
  		     <div class="topnav" id="myTopnav">
-  		       <a href="#home" class="active">About</a>
- 		       <a href="#agenda">Agenda</a>
-                       <a href="#speakers">Speakers</a>
+ 		     	<div class="wrapper">
+  		       			<a href="#section-2" class="active">About</a>
+ 		       			<a href="#section-4">Agenda</a>
+                       <a href="#section-3 speakers-section">Speakers</a>
                        <a href="#FAQ">FAQ</a>
                        <a href="https://www.bilietai.lt/lit/" target="blank">Tickets</a>
                        <a href="blog.html">Blog</a>
@@ -422,12 +422,14 @@ function myFunction() {
 <!-- --------Agenda -->
 		<section id="section-4">
 
-<h1 class="agendasectionh1"> Agenda </h1>
-			
+
+	<div id="agenda">	
+
+	<h1 class="agendasectionh1"> Agenda </h1>	
 <table class=agendatable>
       <tr>
          <td></td>
-         <td><img class="agendaimg" height="430px"src="Images/agenda.png" alt="AgendaDots."></td>
+         <td><img class="agendaimg" height="430px"src="Images/agenda.png" alt="AgendaDots."/></td>
          <td>
              <div> <h3 class="time"> 9.00 - 9.15 Opening/ Welcome speech </h3></div>
              <div> <h3 class="time"> 9.15 - 10.00 Moojan Asghari</h3> "AI in our lives" </div>
@@ -447,6 +449,7 @@ function myFunction() {
          <td><img class="agendaimg" height="450px"src="Images/agenda.png" alt="AgendaDots."></td>
      </tr>
 </table>	
+</div>
 		    </section>
 
 <!-- --------Gallery -->
