@@ -1077,6 +1077,8 @@ a .social-icon , .links h4 {
 	}
 	.lastlogo {
 		height: 40px;
+		width: auto;
+		margin-bottom: 2%;
 	}
 	.foot>div:nth-child(3){
 		border-left: 1px solid white;
