@@ -962,6 +962,8 @@ a .social-icon , .links h4 {
 		grid-gap: 20px;
 		justify-content: center;
 		text-align: center;
+		color: white;
+	}
 	}
 	.sponsors div{
 		height: 100px;
