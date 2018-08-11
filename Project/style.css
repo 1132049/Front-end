@@ -1003,6 +1003,10 @@ a .social-icon , .links h4 {
 		padding-top: 20px;
 		padding-right: 20px;
 	}
+	
+	input[type=submit] {
+		margin-top: 2%;
+	}
 
 	form > input:nth-child(1){
 		margin-right: 15%;
