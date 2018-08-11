@@ -1078,6 +1078,7 @@ a .social-icon , .links h4 {
 		grid-column:span 3;
 		width: 100%;
 		padding-top: 2%;
+		font-size: 12px;
 	}
 	.lastlogo {
 		height: 40px;
