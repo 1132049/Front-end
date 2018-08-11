@@ -1047,7 +1047,12 @@ a .social-icon , .links h4 {
 	}
 
 	/*        FOOOT           */
+	footer {
+		border-top: 1px solid white;
+}
+	
 	.foot{
+		padding: 2%;
 		font-size: 15px;
 		margin: 0 auto;
 		width: 100%;
@@ -1056,11 +1061,11 @@ a .social-icon , .links h4 {
 		display: grid;
 		grid-template-rows:1fr 50px;
 		grid-template-columns: 1fr 1fr 1fr;
+	
 	}
 
 	.foot>div:first-child{
-		border-right: 1px solid white;
-		border-radius: 8px;
+		border-right: 1px solid white;		
 	}
 	.foot>div:last-child{
 		grid-column:span 3;
@@ -1073,7 +1078,6 @@ a .social-icon , .links h4 {
 	}
 	.foot>div:nth-child(3){
 		border-left: 1px solid white;
-		border-radius: 8px;
 	}
 
 	#suscribe{
