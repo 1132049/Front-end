@@ -1026,7 +1026,7 @@ a .social-icon , .links h4 {
 	.contact{
 		width: 60%;
 		margin: 0 auto;
-		min-height:auto;
+		min-height: auto;
 		color:white;
 	}
 	.footform{
@@ -1162,6 +1162,7 @@ a .social-icon , .links h4 {
 		padding: 5px 0;
 	}
 	.foot div .fab {
+		margin-top: 34px;
 		padding: 10px;
 		font-size: 1.3em;
 		color: white;
@@ -1331,6 +1332,7 @@ a .social-icon , .links h4 {
 		padding: 5px 0;
 	}
 	.foot div .fab {
+		margin-top: 40px;
 		padding: 10px;
 		font-size: 1.3em;
 		color: white;
