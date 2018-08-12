@@ -1370,6 +1370,10 @@ a .social-icon , .links h4 {
 		width: 90%;
 		margin: 0 auto;
 	}
+	#contact{
+		min-height:auto;
+		padding-bottom:30px;
+	}
 	.footform{
 		display:grid;
 		align-items: center;
