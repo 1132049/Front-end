@@ -336,8 +336,35 @@ section {
 	font-size: 18px;
 	text-align: justify;	
 }
+#back-button {
+    	background-image: url("images/back.png");
+    	position: relative;
+    	background-position: right;
+    	background-size: contain;
+   	background-repeat: no-repeat;
+    	height: 10vh;
+    	width: 25%;
+    	margin: 10% 0 0 auto;
+  }
+ #back-button > a {
+    	position: absolute;
+    	width: 100%;
+    	height: 100%;
+    	top: 0;
+    	left: 0;
+    	text-decoration: none; 
+    	z-index: 10; /* Places the link above everything else in the div */
+    	background-color: #FFF; /* Fix to make div clickable in IE */
+    	opacity: 0; /* Fix to make div clickable in IE */
+    	filter: alpha(opacity=1);  /*Fix to make div clickable in IE */
+}
 
-
+#agenda > #back-button {
+	margin: 0 0 0 auto;  
+}
+.contact > #back-button {
+	margin: 10% 0 5% auto;
+}
 @media screen and (max-width: 600px) {
 
 	.about-container { 
