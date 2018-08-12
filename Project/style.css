@@ -989,12 +989,16 @@ a .social-icon , .links h4 {
 		text-align: center;
 		color: white;
 	}
-}
+
 .sponsors div{
 	height: 100px;
 }
 #sponsorsh{
-	font-size: 2em;
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	padding: 30px;
 }
 .sponsors div:first-child{
 	grid-column: span 3;
@@ -1019,9 +1023,11 @@ a .social-icon , .links h4 {
 }
 
 #contacth {
+	font-size: 3em;
 	text-align: center;
-	margin-top: 50px;
-	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	padding: 30px;
 }
 input[type=text]{
 	width: 30%;
@@ -1175,7 +1181,11 @@ footer {
 		height: 80px;
 	}
 	#sponsorsh{
-		font-size: 2em;
+		font-size: 3em;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		padding: 30px;
 	}
 	.sponsors div:first-child{
 		grid-column: span 3;
@@ -1198,9 +1208,11 @@ footer {
 	}
 
 	#contacth {
+		font-size: 3em;
 		text-align: center;
-		margin-top: 50px;
-		font-size: 2em;
+		color: white;
+		text-transform: uppercase;
+		padding: 30px;
 	}
 	input[type=text]{
 		width: 30%;
@@ -1335,9 +1347,11 @@ footer {
 		padding: 15px 0;
 	}
 	#sponsorsh {
-		color: rgb(255, 255, 255);
+		font-size: 2em;
 		text-align: center;
-		margin-top: 50px 0;
+		color: white;
+		text-transform: uppercase;
+		padding: 30px;
 	}
 	/* CONTACT */
 	.contact{
@@ -1351,7 +1365,11 @@ footer {
 	}
 
 	#contacth{
+		font-size: 2em;
 		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		padding: 30px;
 	}
 
 	input[type=text]{
@@ -1405,8 +1423,11 @@ footer {
 
 	.foot>div:first-child{
 		margin: 15px 0;
-			}
+		border-top: 1px solid #84b9d4;
+	}
 	.foot>div:nth-child(2){
+		border-top: 1px solid #84b9d4;
+		border-bottom: 1px solid #84b9d4;
 		padding: 25px 0;
 	}
 	.foot>div:last-child{
