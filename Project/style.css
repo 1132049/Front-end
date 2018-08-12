@@ -1351,7 +1351,7 @@ a .social-icon , .links h4 {
 		text-align: center;
 	}
 	.imgsponsors{
-		height: 40px;
+		height: 60px;
 		padding: 15px 0;
 	}
 	#sponsorsh {
@@ -1397,7 +1397,7 @@ a .social-icon , .links h4 {
 
 	#message {
 		height: 100px;
-		width: 90%;
+		width: 96%;
 		background-color: #141415;
 		border: 1px solid #84b9d4;
 		border-radius: 8px;
