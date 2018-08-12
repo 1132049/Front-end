@@ -1026,7 +1026,7 @@ a .social-icon , .links h4 {
 	.contact{
 		width: 60%;
 		margin: 0 auto;
-		height: 600px;
+		min-height:auto;
 		color:white;
 	}
 	.footform{
@@ -1166,6 +1166,9 @@ a .social-icon , .links h4 {
 		font-size: 1.3em;
 		color: white;
 	}
+	.foot div .fab:hover{
+		color: #84b9d4;
+	}
 }
 
 
@@ -1207,7 +1210,7 @@ a .social-icon , .links h4 {
 	.contact{
 		width: 70%;
 		margin: 0 auto;
-		height: 600px;
+		min-height: auto;
 	}
 	.footform{
 		max-width: 600px;
@@ -1331,6 +1334,9 @@ a .social-icon , .links h4 {
 		padding: 10px;
 		font-size: 1.3em;
 		color: white;
+	}
+	.foot div .fab:hover{
+		color: #84b9d4;
 	}
 }
 
@@ -1474,5 +1480,8 @@ a .social-icon , .links h4 {
 	.foot div .fab{
 		padding: 10px;
 		color: white;
+	}
+	.foot div .fab:hover{
+		color: #84b9d4;
 	}
 }
