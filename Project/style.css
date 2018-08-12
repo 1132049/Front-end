@@ -679,6 +679,9 @@ a .social-icon , .links h4 {
 	.links { 
 		padding-top: 18px;
 	}
+	footer {
+		color: white;
+	}
 
 }
 
@@ -754,6 +757,10 @@ a .social-icon , .links h4 {
 
 	.links a i { 
 		margin-bottom: 15px;
+	}
+	
+	footer {
+		color: white;
 	}
 
 }
