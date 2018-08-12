@@ -1169,7 +1169,7 @@ footer {
 	.sponsors{
 		width: 70%;
 		margin: 0 auto;
-		max-height: 600px;
+		max-height: 400px;
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
