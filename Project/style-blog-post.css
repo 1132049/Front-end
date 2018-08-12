@@ -108,6 +108,7 @@ a:hover, #home-button:hover {
     font-size: 2vw;
 }
 p{
+    padding: 1% 0;
     -webkit-margin-before: 0; /*Inspectinau, nes nesupratau kai kuriu tarpu kilmes - issiaiskinau, kad yra taikoma -webkit-margin*/
     -webkit-margin-after: 0; /*Inspectinau, nes nesupratau kai kuriu tarpu kilmes - issiaiskinau, kad yra taikoma -webkit-margin*/
 }
