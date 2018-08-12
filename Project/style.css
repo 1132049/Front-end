@@ -1207,7 +1207,7 @@ footer {
 		border: none;
 		border-bottom: 1px solid #84b9d4;
 		color: white;
-		background-color: #141415;
+		background-color: transparent;
 		padding-top: 20px;
 		padding-right: 20px;
 	}
@@ -1231,7 +1231,7 @@ footer {
 	#message {
 		height: 200px;
 		width: 80%;
-		background-color: #141415;
+		background-color: transparent;
 		border: 1px solid #84b9d4;
 		border-radius: 8px;
 		padding: 10px 10px;
