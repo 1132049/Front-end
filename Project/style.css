@@ -1366,7 +1366,7 @@ footer {
 		outline: none;
 	}
 	input::placeholder, textarea::placeholder {
-		color: #9999ff;
+		color: #84b9d4;
 	}
 
 	#message {
