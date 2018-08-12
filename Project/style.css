@@ -140,6 +140,7 @@ header {
 @media screen and (max-width: 600px) { 
 
 	#logo { 
+		margin: 5% auto;
 		margin: 0 auto;
 		background-position: center;
 	}
