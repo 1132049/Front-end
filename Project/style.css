@@ -134,7 +134,9 @@ header {
 		width: 100%;
 		text-align: left;
 	}
-
+	footer {
+		color: white;
+	}
 }
 
 @media screen and (max-width: 600px) { 
