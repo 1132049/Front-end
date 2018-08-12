@@ -1011,7 +1011,7 @@ a .social-icon , .links h4 {
 		text-align: center;
 		color: white;
 		text-transform: uppercase;
-		padding: 30px;
+		padding-bottom: 30px;
 	}
 	.sponsors div:first-child{
 		grid-column: span 3;
@@ -1040,7 +1040,7 @@ a .social-icon , .links h4 {
 		text-align: center;
 		color: white;
 		text-transform: uppercase;
-		padding: 30px;
+		padding-bottom: 30px;
 	}
 	input[type=text]{
 		width: 30%;
@@ -1173,11 +1173,7 @@ a .social-icon , .links h4 {
 /*  MID REZ  */
 @media only screen and (min-width: 601px) and (max-width: 1200px){
 
-	footer{
-		width: 100%;
-		background-color: #141415;
-		color: white;
-	}
+	
 	/* SPONSORS */
 	.sponsors{
 		width: 70%;
@@ -1197,7 +1193,7 @@ a .social-icon , .links h4 {
 		text-align: center;
 		color: white;
 		text-transform: uppercase;
-		padding: 30px;
+		padding-bottom: 30px;
 	}
 	.sponsors div:first-child{
 		grid-column: span 3;
@@ -1224,7 +1220,7 @@ a .social-icon , .links h4 {
 		text-align: center;
 		color: white;
 		text-transform: uppercase;
-		padding: 30px;
+		padding-bottom: 30px;
 	}
 	input[type=text]{
 		width: 30%;
@@ -1278,7 +1274,12 @@ a .social-icon , .links h4 {
 	}
 
 	/*        FOOOT           */
+	footer{
+		background-color: #141415;
+		border-top:1 px solid white;
+	}
 	.foot{
+		padding: 2% ;
 		font-size: 15px;
 		margin: 0 auto;
 		width: 100%;
@@ -1291,12 +1292,10 @@ a .social-icon , .links h4 {
 
 	.foot>div:first-child{
 		border-right: 1px solid white;
-		border-radius: 8px;
 	}
 	.foot>div:last-child{
 		grid-column:span 3;
 		width: 100%;
-		border-top: 1px solid white;
 		padding-top: 10px;
 	}
 	.lastlogo {
@@ -1304,7 +1303,6 @@ a .social-icon , .links h4 {
 	}
 	.foot>div:nth-child(3){
 		border-left: 1px solid white;
-		border-radius: 8px;
 	}
 
 	#suscribe{
@@ -1316,6 +1314,7 @@ a .social-icon , .links h4 {
 		background-color: #141415;
 		color: #84b9d4;
 		border-radius: 6px;
+		padding:5px 5px;
 	}
 	#suscribebtn:hover{
 		background-color: #84b9d4;
@@ -1341,9 +1340,8 @@ a .social-icon , .links h4 {
 @media only screen and (max-width: 600px){
 
 	footer{
-		width: 100%;
 		background-color: #141415;
-		color: white;}
+	}
 
 	/* SPONSORS */
 	.sponsors{
@@ -1363,7 +1361,7 @@ a .social-icon , .links h4 {
 		text-align: center;
 		color: white;
 		text-transform: uppercase;
-		padding: 30px;
+		padding-bottom: 30px;
 	}
 	/* CONTACT */
 	.contact{
@@ -1385,7 +1383,7 @@ a .social-icon , .links h4 {
 		text-align: center;
 		color: white;
 		text-transform: uppercase;
-		padding: 30px;
+		padding-bottom: 30px;
 	}
 
 	input[type=text]{
