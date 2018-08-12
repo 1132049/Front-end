@@ -3,7 +3,7 @@ body {
 	font-family: 'Didact Gothic', sans-serif;
 }
 
-/*---fixes big space on the right side---*/
+/* fixes big space on the right side */
 html,body { 
 	padding: 0px;
 	margin: 0px;
@@ -12,17 +12,18 @@ html,body {
 	overflow-x: hidden;
 }
 
-/*---header ---*/
+/* header */
 header {
 	border-bottom: 1px solid rgba(255,255,255, 0.3);   
 }
+
 .logo {
 	height: 80px;
 	width: 200px;
 	padding: 10px;
 }
 
-/*---nav bar---*/
+/* nav bar */
 .topnav {
 	overflow: hidden;
 	background-color: #141415;
@@ -207,7 +208,7 @@ section {
 	width: auto;
 }
 
-/*---Front page*/
+/* Front page */
 #section-1 {
 	background-image: url('images/img-1.gif');
 	background-repeat: no-repeat;
@@ -216,6 +217,7 @@ section {
 	padding: 30px;
 }
 
+/* Front page content wrapper */
 .text-wrapper {
 	letter-spacing: 3px;
 	text-align: center;
@@ -312,7 +314,7 @@ section {
 	}
 }
 
-/*---About us*/
+/* About us */
 #section-2 {
 	background-image: url("Images/img-2.png");
 	background-position: bottom;
@@ -358,14 +360,13 @@ section {
 	}
 }
 
-/*---Speakers*/
+/* Speakers */
 #section-3 {
 	background-image: url(Images/img-3.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-/* speakers section */
 #speakers-section { 
 	padding-bottom: 20px;
 }
@@ -413,6 +414,7 @@ section {
 	perspective: 1000px;
 }
 
+/* image color changing time */
 .speaker-image { 
 	transition: all 0.3s;
 }
@@ -526,6 +528,7 @@ section {
 	width: auto;
 }
 
+/* social media icons */
 .links i { 
 	display: block;
 	margin-top: 15px;
@@ -1366,10 +1369,6 @@ a .social-icon , .links h4 {
 	.contact{
 		width: 90%;
 		margin: 0 auto;
-	}
-	#contact{
-		min-height:auto;
-		padding-bottom:30px;
 	}
 	.footform{
 		display:grid;
