@@ -344,7 +344,7 @@ section {
    	background-repeat: no-repeat;
     	height: 10vh;
     	width: 25%;
-    	margin: 10% 0 0 auto;
+    	margin: 10% 0 5% auto;
   }
  #back-button > a {
     	position: absolute;
@@ -359,12 +359,6 @@ section {
     	filter: alpha(opacity=1);  /*Fix to make div clickable in IE */
 }
 
-#agenda > #back-button {
-	margin: 0 0 0 auto;  
-}
-.contact > #back-button {
-	margin: 10% 0 5% auto;
-}
 @media screen and (max-width: 600px) {
 
 	.about-container { 
