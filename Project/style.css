@@ -851,23 +851,21 @@ a .social-icon , .links h4 {
 }
 
 /*---Agenda*/
-#agenda {
-	margin: 0 auto;
-	opacity: 1;
-	color: white;
-
-}
-
 #section-4 {
 	background-image: url('images/img-8.png');
 	background-size: 40%;
 	background-position: right bottom 5%;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 	margin: 0 auto;
 	width: 70%;
 	height: auto;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	color: white;
+	opacity: 1;
+}
+a{
+	color: white;
 }
 .agendasectionh1{
 	text-align: center;
@@ -875,24 +873,25 @@ a .social-icon , .links h4 {
 	text-transform: uppercase;
 	padding-bottom:4%;
 }
-.time {
+.time{
 	padding: 10px;
+	color: white;
 }
 .agendatable{
 	width: 100%;
+	color: #84b9d4;
 }
 .agendatable2{
 	text-align: right;
+	color: #84b9d4;
 }
 @media screen and (max-width: 600px) {
 	.agendaimg{
 		height: 600px;
 	}
-
-	.agendasectionh1 { 
+	.agendasectionh1 {
 		font-size: 2em;
 	}
-
 }
 
 /*---Gallery*/
