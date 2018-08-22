@@ -933,8 +933,9 @@ a{
 }
 
 .erwrapp {
-		font-size: 10px;
+	font-size: 10px;
 	color: white;
+	margin: 2% auto;
 }
 
 
