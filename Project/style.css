@@ -1048,6 +1048,7 @@ a{
 		padding: 10px 10px;
 		resize: none;
 		color: white;
+		margin: 1% auto;
 	}
 	
 	#sendbtn {
