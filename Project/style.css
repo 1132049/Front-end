@@ -1242,7 +1242,9 @@ a{
 	
 	.ermessage { 
 	margin: 0 auto;
-	height: 5px;}
+	height: 5px;
+	font-size: 10px;
+	}
 	
 
 
