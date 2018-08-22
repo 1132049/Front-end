@@ -3,6 +3,19 @@ body {
 	font-family: 'Didact Gothic', sans-serif;
 }
 
+.erwrapp {
+	font-size: 10px;
+	text-align: center;
+	color: white;
+	margin: 2% auto;
+}
+.ermessage {
+	text-align: center;
+	color: white;
+	width: 100%;
+	font-size: 10px;
+}
+
 /* fixes big space on the right side */
 html,body { 
 	padding: 0px;
@@ -909,13 +922,6 @@ a{
 .carousel-caption { 
 	margin-bottom: 20px;
 }
-
-.erwrapp {
-	font-size: 10px;
-	color: white;
-	margin: 2% auto;
-}
-
 
 @media only screen and (min-width: 601px) and (max-width:1200px) { 
 
