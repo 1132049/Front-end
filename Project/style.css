@@ -929,6 +929,10 @@ a{
 	margin-bottom: 20px;
 }
 
+p { 
+font-size: 10px;
+}
+
 @media only screen and (min-width: 601px) and (max-width:1200px) { 
 
 	.carousel-container {
@@ -1016,6 +1020,9 @@ a{
 		max-width: 600px;
 		margin: 0 auto;
 		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 
 	#contacth {
@@ -1025,8 +1032,13 @@ a{
 		text-transform: uppercase;
 		padding-bottom: 30px;
 	}
-	input[type=text]{
-		width: 30%;
+	
+	.inputblock { 
+	width: 50%;
+	}
+	
+	input[type=text] {
+		width: 80%;
 		border: none;
 		border-bottom: 1px solid #84b9d4;
 		color: white;
@@ -1039,25 +1051,17 @@ a{
 		margin-top: 2%;
 	}
 
-	form > input:nth-child(1){
-		margin-right: 15%;
-		margin-bottom: 5%;
-	}
-	form > input:nth-child(3){
-		margin-right: 15%;
-		margin-bottom: 10%;
-	}
-
 	textarea:focus, input:focus{
 		outline: none;
 	}
 	input::placeholder, textarea::placeholder {
 		color: #84b9d4;
 	}
-
+	
 	#message {
 		height: 200px;
-		width: 80%;
+		width: 100%;
+		margin: 0 auto;
 		background-color: transparent;
 		border: 1px solid #84b9d4;
 		border-radius: 8px;
@@ -1065,6 +1069,7 @@ a{
 		resize: none;
 		color: white;
 	}
+	
 	#sendbtn {
 		margin-top: 8%;
 		border: 1px solid #84b9d4;
@@ -1124,7 +1129,7 @@ a{
 	}
 
 	#suscribe{
-		width: 45%
+		width: 45%;
 	}
 
 	#suscribebtn{
@@ -1200,6 +1205,9 @@ a{
 		max-width: 600px;
 		margin: 0 auto;
 		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
 	}
 
 	#contacth {
@@ -1209,8 +1217,12 @@ a{
 		text-transform: uppercase;
 		padding-bottom: 30px;
 	}
+	
+	.inputblock { 
+	width: 50%;
+	}
 	input[type=text]{
-		width: 30%;
+		width: 80%;
 		border: none;
 		border-bottom: 1px solid #84b9d4;
 		color: white;
@@ -1219,14 +1231,6 @@ a{
 		padding-right: 20px;
 	}
 
-	form > input:nth-child(1){
-		margin-right: 15%;
-		margin-bottom: 5%;
-	}
-	form > input:nth-child(3){
-		margin-right: 15%;
-		margin-bottom: 10%;
-	}
 
 	textarea:focus, input:focus{
 		outline: none;
