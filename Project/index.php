@@ -635,22 +635,22 @@ if($_POST) {
 				</div>
 				<div class="inputblock">
 					<input type="text" placeholder="surname" name = "surname" value="<?php echo $surname; ?>"/>
-					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+					<div class="erwrapp"><p><?php echo $error['surname']; ?></p></div>
 				</div>
 				<div class="inputblock">
 					<input type="text" placeholder="email" name = "email" value="<?php echo $email; ?>"/>
-					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+					<div class="erwrapp"><p><?php echo $error['email']; ?></p></div>
 
 				</div>
 				<div class="inputblock">	<input type="text" placeholder="phone" name = "phone" value="<?php echo $phone; ?>"/>
-					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+					<div class="erwrapp"><p><?php echo $error['phone']; ?></p></div>
 				</div>
 				<div class="inputblock">
 					<input type="text" placeholder="2 + 2" name = "check" value="<?php echo $check; ?>"/>
-					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+					<div class="erwrapp"><p><?php echo $error['check']; ?></p></div>
 				</div>
 				<textarea id="message" placeholder="message" name = "message"><?php echo $message; ?></textarea>
-				<p><?php echo $error['name']; ?></p>
+				<p><?php echo $error['message']; ?></p>
 				<input type="hidden" id = "empty" name = "empty"/>
 				<input type="submit" value="send" id="sendbtn">
 				<?php echo $error['database']; ?>
