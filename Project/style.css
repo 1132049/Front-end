@@ -929,9 +929,10 @@ a{
 	margin-bottom: 20px;
 }
 
-p { 
-font-size: 10px;
+.erwrapp {
+		font-size: 10px;
 }
+
 
 @media only screen and (min-width: 601px) and (max-width:1200px) { 
 
