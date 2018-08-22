@@ -336,6 +336,28 @@ section {
 	font-size: 18px;
 	text-align: justify;	
 }
+#back-button {
+    	background-image: url("images/back.png");
+    	position: relative;
+    	background-position: right;
+    	background-size: contain;
+   	background-repeat: no-repeat;
+    	height: 10vh;
+    	width: 25%;
+    	margin: 10% 0 5% auto;
+  }
+ #back-button > a {
+    	position: absolute;
+    	width: 100%;
+    	height: 100%;
+    	top: 0;
+    	left: 0;
+    	text-decoration: none; 
+    	z-index: 10; /* Places the link above everything else in the div */
+    	background-color: #FFF; /* Fix to make div clickable in IE */
+    	opacity: 0; /* Fix to make div clickable in IE */
+    	filter: alpha(opacity=1);  /*Fix to make div clickable in IE */
+}
 
 @media screen and (max-width: 600px) {
 
@@ -909,7 +931,7 @@ a{
 
 .erwrapp {
 		font-size: 10px;
-		margin-top: 2%;
+	color: white;
 }
 
 
@@ -1048,7 +1070,6 @@ a{
 		padding: 10px 10px;
 		resize: none;
 		color: white;
-		margin: 1% auto;
 	}
 	
 	#sendbtn {
@@ -1183,6 +1204,7 @@ a{
 		margin: 0 auto;
 		min-height: auto;
 	}
+	
 	.footform{
 		max-width: 600px;
 		margin: 0 auto;
@@ -1202,6 +1224,7 @@ a{
 	
 	.inputblock { 
 	width: 50%;
+		margin: 0 auto;
 	}
 	input[type=text]{
 		width: 80%;
@@ -1212,6 +1235,11 @@ a{
 		padding-top: 20px;
 		padding-right: 20px;
 	}
+	
+	.ermessage { 
+	margin: 0 auto;
+	height: 5px;}
+	
 
 
 	textarea:focus, input:focus{
@@ -1220,6 +1248,9 @@ a{
 	input::placeholder, textarea::placeholder {
 		color: #84b9d4;
 	}
+	
+	textarea { 
+	margin: 20px auto;}
 
 	#message {
 		height: 200px;
@@ -1230,6 +1261,7 @@ a{
 		padding: 10px 10px;
 		resize: none;
 		color: white;
+		margin-bottom: 0px;
 	}
 	#sendbtn {
 		margin: 25px auto;
@@ -1241,7 +1273,7 @@ a{
 		width: 30%;
 		height: 30%;
 	}
-
+	
 	#suscribebtn, #sendbtn:hover{
 		background-color: #84b9d4;
 		color: #141415;
@@ -1280,7 +1312,7 @@ a{
 	}
 
 	#suscribe{
-		width: 60%
+		width: 60%;
 	}
 
 	#suscribebtn{
@@ -1388,6 +1420,7 @@ a{
 		padding: 10px 10px;
 		resize: none;
 		color: white;
+		margin-bottom: 10px;
 	}
 	#sendbtn {
 		margin: 25px auto;
