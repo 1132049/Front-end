@@ -633,7 +633,7 @@ if($_POST) {
 				</div>
 				<textarea id="message" placeholder="message" name = "message"><?php echo $message; ?></textarea>
 				<div class="ermessage"><p><?php echo $error['message']; ?></p></div>
-				<p class="erwrapp"><?php echo $error['empty']; ?></p>
+				<div class="ermessage"><p><?php echo $error['empty']; ?></p></div>
 				<input type="hidden" id = "empty" name = "empty"/>
 				<input type="submit" value="send" id="sendbtn">
 				<?php echo $error['database']; ?>
