@@ -655,8 +655,8 @@ if($_POST) {
 					<div class="erwrapp"><p><?php echo $error['check']; ?></p></div>
 				</div>
 				<textarea id="message" placeholder="message" name = "message"><?php echo $message; ?></textarea>
-				<p><?php echo $error['message']; ?></p>
-				<p><?php echo $error['empty']; ?></p>
+				<p class="erwrapp"><?php echo $error['message']; ?></p>
+				<p class="erwrapp"><?php echo $error['empty']; ?></p>
 				<input type="hidden" id = "empty" name = "empty"/>
 				<input type="submit" value="send" id="sendbtn">
 				<?php echo $error['database']; ?>
