@@ -5,13 +5,14 @@ $surname = isset($_POST['surname']) ? $_POST['surname'] : '';
 $email = isset($_POST['email']) ? $_POST['email'] : '';
 $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
 $message = isset($_POST['message']) ? $_POST['message'] : '';
+$empty = isset($_POST['empty']) ? $_POST['empty'] : '';
 $check = isset($_POST['check']) ? $_POST['check'] : '';
-$error = array("name" => "","surname" => "", "email" => "","phone" => "","message" => "","check" =>"", "database" => "");
+$error = array("name" => "","surname" => "", "email" => "","phone" => "","message" => "","check" =>"","empty"=>"", "database" => "");
 
 if($_POST) {
 
 	if($check != 4 || strlen($name) == 0 || strlen($name) > 255 || strlen($email) == 0 || strlen($email) > 255 ||
-	   strlen($email) > 255 || !strpos($email, '@') || strlen($phone) > 255 || strlen($phone) == 0 || strlen($message) == 0) {
+	   strlen($email) > 255 || !strpos($email, '@') || strlen($phone) > 255 || strlen($phone) == 0 || strlen($message) == 0 || $empty!='') {
 
 		if(strlen($name) == 0) {
 			$error['name'] = 'Error: invalid data in name';
@@ -55,6 +56,10 @@ if($_POST) {
 
 		if($check != 4) {
 			$error['check'] = 'Error: wrong 2 + 2 answer';
+		}
+		
+		if($empty != ''} {
+		 $error['empty'] = 'Error: empty must be empty';
 		}
 
 	}
@@ -651,6 +656,7 @@ if($_POST) {
 				</div>
 				<textarea id="message" placeholder="message" name = "message"><?php echo $message; ?></textarea>
 				<p><?php echo $error['message']; ?></p>
+				<p><?php echo $error['empty']; ?></p>
 				<input type="hidden" id = "empty" name = "empty"/>
 				<input type="submit" value="send" id="sendbtn">
 				<?php echo $error['database']; ?>
