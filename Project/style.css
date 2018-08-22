@@ -1261,7 +1261,7 @@ a{
 		padding: 10px 10px;
 		resize: none;
 		color: white;
-		margin-bottom: 0px;
+		margin: 1% auto;
 	}
 	#sendbtn {
 		margin: 25px auto;
