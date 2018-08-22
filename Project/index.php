@@ -58,7 +58,7 @@ if($_POST) {
 			$error['check'] = 'Error: wrong 2 + 2 answer';
 		}
 		
-		if($empty !== null) {
+		if($empty != null) {
 		 $error['empty'] = 'Error: empty must be empty';
 		}
 
