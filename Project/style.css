@@ -1063,7 +1063,7 @@ a{
 	#message {
 		height: 200px;
 		width: 100%;
-		margin: 0 auto;
+		margin: 1% auto;
 		background-color: transparent;
 		border: 1px solid #84b9d4;
 		border-radius: 8px;
