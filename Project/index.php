@@ -1,59 +1,45 @@
 <?php
-
 $name = isset($_POST['name']) ? $_POST['name'] : '';
 $surname = isset($_POST['surname']) ? $_POST['surname'] : '';
 $email = isset($_POST['email']) ? $_POST['email'] : '';
 $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
 $message = isset($_POST['message']) ? $_POST['message'] : '';
-$empty = isset($_POST['empty']) ? $_POST['empty'] : '';
+$empty = isset($_POST['empty']) ? $_POST['empty'] : null;
 $check = isset($_POST['check']) ? $_POST['check'] : '';
 $error = array("name" => "","surname" => "", "email" => "","phone" => "","message" => "","check" =>"","empty"=>"", "database" => "");
-
 if($_POST) {
-
 	if($check != 4 || strlen($name) == 0 || strlen($name) > 255 || strlen($email) == 0 || strlen($email) > 255 ||
-	   strlen($email) > 255 || !strpos($email, '@') || strlen($phone) > 255 || strlen($phone) == 0 || strlen($message) == 0 || $empty!='') {
-
+	   strlen($email) > 255 || !strpos($email, '@') || strlen($phone) > 255 || strlen($phone) == 0 || strlen($message) == 0 || $empty!=null) {
 		if(strlen($name) == 0) {
 			$error['name'] = 'Error: invalid data in name';
 		}
-
 		if(strlen($name) > 255) {
 			$error['name'] = 'Error: data is too long in name';
 		}
-
 		if(strlen($surname) == 0) {
 			$error['surname'] = 'Error: invalid data in surname';
 		}
-
 		if(strlen($surname) > 255) {
 			$error['surname'] = 'Error: data is too long in surname';
 		}
-
 		if(strlen($email) == 0) {
 			$error['email'] = 'Error: invalid data in email';
 		}
-
 		if(strlen($email) > 0 || !strpos($email,'@')) {
 			$error['email'] = 'Error: no @ in email';
 		}
-
 		if(strlen($email) > 255) {
 			$error['email'] = 'Error: data us too long in email';
 		}
-
 		if(strlen($phone) == 0) {
 			$error['phone'] = 'Error: invalid data in phone';
 		}
-
 		if(strlen($phone) > 255) {
 			$error['phone'] = 'Error: data is too long in phone';
 		}
-
 		if(strlen($message) == 0) {
 			$error['message'] = 'Error: invalid data in message';
 		}
-
 		if($check != 4) {
 			$error['check'] = 'Error: wrong 2 + 2 answer';
 		}
@@ -61,36 +47,27 @@ if($_POST) {
 		if($empty != null) {
 		 $error['empty'] = 'Error: empty must be empty';
 		}
-
 	}
-
 	else {
-
 		$conn = new mysqli('localhost','root','root','feedback');
-
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-
 		$name = $conn->real_escape_string($name);
 		$surname = $conn->real_escape_string($surname);
 		$email = $conn->real_escape_string($email);
 		$phone = $conn->real_escape_string($phone);
 		$message = $conn->real_escape_string($message);
-
 		$saved = $conn->query("INSERT INTO event (name, surname, email, phone, message)
 		VALUES ('$name','$surname','$email','$phone','$message')");
-
 		if($saved){
 			header('Location: ' . 'index.php#contact');
 		}
-
 		else{
 			$error['database'] = "Error when saving";
 		}
 	}
 }
-
 ?>
 
 
@@ -655,7 +632,7 @@ if($_POST) {
 					<div class="erwrapp"><p><?php echo $error['check']; ?></p></div>
 				</div>
 				<textarea id="message" placeholder="message" name = "message"><?php echo $message; ?></textarea>
-				<p class="erwrapp"><?php echo $error['message']; ?></p>
+				<div class="ermessage"><p><?php echo $error['message']; ?></p></div>
 				<p class="erwrapp"><?php echo $error['empty']; ?></p>
 				<input type="hidden" id = "empty" name = "empty"/>
 				<input type="submit" value="send" id="sendbtn">
