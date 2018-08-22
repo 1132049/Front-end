@@ -54,7 +54,7 @@ if($_POST) {
 		}
 
 		if($check != 4) {
-		$error['check'] = 'Error: wrong check answer';
+			$error['check'] = 'Error: wrong 2 + 2 answer';
 		}
 
 	}
@@ -506,30 +506,30 @@ if($_POST) {
 			<!-- --------Agenda -->
 			<section id="section-4">
 
-					<h1 class="agendasectionh1"> Agenda </h1>
-					<table class=agendatable>
-						<tr>
-							<td></td>
-							<td><img class="agendaimg" height="430px"src="Images/agenda.png" alt="AgendaDots."/></td>
-							<td>
-								<div> <h3 class="time"> 9.00 - 9.15 Opening/ Welcome speech </h3></div>
-								<div> <h3 class="time"> 9.15 - 10.00 <a href="#section-3 speakers-section">Moojan Asghari</a> </h3> "AI in our lives" </div>
-								<div> <h3 class="time"> 10.00 - 11.00 <a href="#section-3 speakers-section">Lenard Koschwitz</a> </h3> "Can Europe become the leader of developing Artificial Inteligence?" </div>
-								<div> <h3 class="time"> 11.00 - 12.00 <a href="#section-3 speakers-section">Avi Itzkovich</a> </h3> "UX trends. Why UX is important in nowadays?" </div>
-								<div> <h3 class="time"> 12.00 - 13.00 <a href="#section-3 speakers-section"> Milda Mitkute</a> </h3> "Start Up success. How to make it work?" </div>
-							</td>
-						</tr>
-						<tr>
-							<td class="agendatable2">
-								<div> <h3 class="time"> 13.00 - 14.00 <a href="#section-3 speakers-section">Kei Karlson</a> </h3> "How the trends for employing will change in the next year?" </div>
-								<div> <h3 class="time"> 14.00 - 15.00 <a href="#section-3 speakers-section">Seth Bannon</a> </h3> "Social Entrepreneurship" </div>
-								<div> <h3 class="time"> 15.00 - 16.00 <a href="#section-3 speakers-section">Pavel Muntyan</a> </h3> "Cryptocurrencies" </div>
-								<div> <h3 class="time"> 16.00 - 17.00 <a href="#section-3 speakers-section">Corinne Virgeux</a> </h3> "Women in tech" </div>
-								<div> <h3 class="time"> 17.00 - 18.00 <a href="#section-3 speakers-section">Ieva Martinkenaite</a> </h3> "AI and Machine Learning" </div>
-							</td>
-						  <td><img class="agendaimg" height="450px"src="Images/agenda.png" alt="AgendaDots."></td>
-						</tr>
-					</table>
+				<h1 class="agendasectionh1"> Agenda </h1>
+				<table class=agendatable>
+					<tr>
+						<td></td>
+						<td><img class="agendaimg" height="430px"src="Images/agenda.png" alt="AgendaDots."/></td>
+						<td>
+							<div> <h3 class="time"> 9.00 - 9.15 Opening/ Welcome speech </h3></div>
+							<div> <h3 class="time"> 9.15 - 10.00 <a href="#section-3 speakers-section">Moojan Asghari</a> </h3> "AI in our lives" </div>
+							<div> <h3 class="time"> 10.00 - 11.00 <a href="#section-3 speakers-section">Lenard Koschwitz</a> </h3> "Can Europe become the leader of developing Artificial Inteligence?" </div>
+							<div> <h3 class="time"> 11.00 - 12.00 <a href="#section-3 speakers-section">Avi Itzkovich</a> </h3> "UX trends. Why UX is important in nowadays?" </div>
+							<div> <h3 class="time"> 12.00 - 13.00 <a href="#section-3 speakers-section"> Milda Mitkute</a> </h3> "Start Up success. How to make it work?" </div>
+						</td>
+					</tr>
+					<tr>
+						<td class="agendatable2">
+							<div> <h3 class="time"> 13.00 - 14.00 <a href="#section-3 speakers-section">Kei Karlson</a> </h3> "How the trends for employing will change in the next year?" </div>
+							<div> <h3 class="time"> 14.00 - 15.00 <a href="#section-3 speakers-section">Seth Bannon</a> </h3> "Social Entrepreneurship" </div>
+							<div> <h3 class="time"> 15.00 - 16.00 <a href="#section-3 speakers-section">Pavel Muntyan</a> </h3> "Cryptocurrencies" </div>
+							<div> <h3 class="time"> 16.00 - 17.00 <a href="#section-3 speakers-section">Corinne Virgeux</a> </h3> "Women in tech" </div>
+							<div> <h3 class="time"> 17.00 - 18.00 <a href="#section-3 speakers-section">Ieva Martinkenaite</a> </h3> "AI and Machine Learning" </div>
+						</td>
+						<td><img class="agendaimg" height="450px"src="Images/agenda.png" alt="AgendaDots."></td>
+					</tr>
+				</table>
 			</section>
 
 			<!-- --------Gallery -->
@@ -629,60 +629,72 @@ if($_POST) {
 		<div class="contact">
 			<div><h2 id="contacth"> CONTACT US </h2></div>
 			<form method="post" class="footform" action="<?php echo 'index.php#contact' ?>">
-				<input type="text" placeholder="name" name="name" value="<?php echo $name; ?>"/>
-				<?php echo $error['name']; ?>
-				<input type="text" placeholder="surname" name = "surname" value="<?php echo $surname; ?>"/>
-				<?php echo $error['surname']; ?>
-				<input type="text" placeholder="email" name = "email" value="<?php echo $email; ?>"/>
-				<?php echo $error['email']; ?>
-				<input type="text" placeholder="phone" name = "phone" value="<?php echo $phone; ?>"/>
-				<?php echo $error['phone']; ?>
-				<input type="text" placeholder="check" name = "check" value="<?php echo $check; ?>"/>2+2
-				<?php echo $error['check']; ?>
+				<div class="inputblock">
+					<input type="text" placeholder="name" name="name" value="<?php echo $name; ?>"/>
+					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+				</div>
+				<div class="inputblock">
+					<input type="text" placeholder="surname" name = "surname" value="<?php echo $surname; ?>"/>
+					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+				</div>
+				<div class="inputblock">
+					<input type="text" placeholder="email" name = "email" value="<?php echo $email; ?>"/>
+					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+
+				</div>
+				<div class="inputblock">	<input type="text" placeholder="phone" name = "phone" value="<?php echo $phone; ?>"/>
+					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+				</div>
+				<div class="inputblock">
+					<input type="text" placeholder="2 + 2" name = "check" value="<?php echo $check; ?>"/>
+					<div class="erwrapp"><p><?php echo $error['name']; ?></p></div>
+				</div>
 				<textarea id="message" placeholder="message" name = "message"><?php echo $message; ?></textarea>
-				<?php echo $error['message']; ?>
+				<p><?php echo $error['name']; ?></p>
 				<input type="hidden" id = "empty" name = "empty"/>
 				<input type="submit" value="send" id="sendbtn">
 				<?php echo $error['database']; ?>
 				<div id="back-button"> <a href="#header"></a>
 				</div>
-				</section>
+			</form>
+			</section>
 
-			<!-- FOOT -->
-			<footer>
-				<div class="foot">
-					<div> <h5>Subscribe</h5>
-						<p>Enter your email to get notified <span>about the latest news</span></p>
-						<input type="text" placeholder="email" value="" id="suscribe"/>
-						<span> <input type="submit" value="subscribe" id="suscribebtn"/> </span>
-					</div>
-					<div>
-						<h5>Contact us</h5>
-						<span>info@codeacademy.lt</span>
-						<span>Saulėtekio al.15 Vilnius Lithuania</span>
-						<span>+37066366555</span>
 
-					</div>
-					<div>
-						<a href = "#header"><img  src="images/logo.png" class="lastlogo" /></a> <h5> Create your future</h5>
-						<span>Follow us on social media</span>
-						<a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
-						<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-						<a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-						<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+		<!-- FOOT -->
+		<footer>
+			<div class="foot">
+				<div> <h5>Subscribe</h5>
+					<p>Enter your email to get notified <span>about the latest news</span></p>
+					<input type="text" placeholder="email" value="" id="suscribe"/>
+					<span> <input type="submit" value="subscribe" id="suscribebtn"/> </span>
+				</div>
+				<div>
+					<h5>Contact us</h5>
+					<span>info@codeacademy.lt</span>
+					<span>Saulėtekio al.15 Vilnius Lithuania</span>
+					<span>+37066366555</span>
 
-					</div>
+				</div>
+				<div>
+					<a href = "#header"><img  src="images/logo.png" class="lastlogo" /></a> <h5> Create your future</h5>
+					<span>Follow us on social media</span>
+					<a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
 
-					<div>
-						© 2018 code4cookies. All rights reserved.
-
-					</div>
 				</div>
 
+				<div>
+					© 2018 code4cookies. All rights reserved.
 
-			</footer>
+				</div>
+			</div>
+
+
+		</footer>
 
 		</div>
-		<script src="myjs/modal.js"></script>
-		</body>
+	<script src="myjs/modal.js"></script>
+	</body>
 </html>
